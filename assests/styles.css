@@ -146,3 +146,23 @@ button:active {
     background-color: #ffffff;
     color: #ffae00;
 }
+#p-1-count {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ef492f;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+
+}
+#p-2-count {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ef492f;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+
+}

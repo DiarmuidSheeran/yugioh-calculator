@@ -50,4 +50,8 @@ function calculate() {
         }
     }
 }
+//allows user to edit a mistake by using the slice method to remove last value of the screen value string
+function undo() {
+    screen.value = screen.value.slice(0, -1);
+}
 

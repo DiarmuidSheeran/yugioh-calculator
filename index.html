@@ -15,6 +15,36 @@
         </div>
     </header>
 
+    <div class="container">
+        <section class="player-1">
+            <h2 id="name1">Player 1</h2>
+            <div class="player-name">
+                <input type="text" class="player-name" value="" placeholder="Name:" id="player-1" onclick="submitName1()">  
+            </div>
+            <div class="calculator">
+                <input type="text" id="result" value="8000" disabled>
+                <br>
+                <div class="buttons">
+                    <button onclick="addToScreen('7')">7</button>
+                    <button onclick="addToScreen('8')">8</button>
+                    <button onclick="addToScreen('9')">9</button>
+                    <button onclick="addToScreen('4')">4</button>
+                    <button onclick="addToScreen('5')">5</button>
+                    <button onclick="addToScreen('6')">6</button> 
+                    <button onclick="addToScreen('1')">1</button>
+                    <button onclick="addToScreen('2')">2</button>
+                    <button onclick="addToScreen('3')">3</button>
+                    <button onclick="addToScreen('0')">0</button>
+                    <button onclick="addToScreen('+')" id="plus">+</button>
+                    <button onclick="addToScreen('-')" id="minus">-</button>
+                    <button onclick="clearScreen()" id="reset">Reset</button>
+                    <button onclick="calculate()" id="equals">=</button>
+                    <button onclick="undo()" id="undo">Undo</button>
+                    <br>
+                    <p id="p-1-count">Wins: 0</p>    
+                </div>
+            </div>
+
 
     <script src="assests/script.js"></script>
 </body>

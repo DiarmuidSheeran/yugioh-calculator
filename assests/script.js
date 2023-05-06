@@ -25,4 +25,10 @@ function addToScreen(value) {
 function clearScreen() {         
     screen.value = "8000";   
 }
+//eval object checks the screens value and makes calculation when = operand is clicked
+function calculate() {
+    screen.value = eval(screen.value);
+    let result = document.getElementById('result-screen')
+    let winner = document.getElementById('p-2-count')
 
+}

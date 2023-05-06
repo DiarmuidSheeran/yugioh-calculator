@@ -199,4 +199,6 @@ function formatTime(seconds) {
     let minutes = Math.floor(seconds / 60);
     //when seconds are divided by 60 the modulo operator finds the remainder of seconds
     let secondsRemaining = seconds % 60;
+    //minutes and seconds are conveted to string, padstart method ensures the minimum length of two by adding a 0
+    return minutes.toString().padStart(2, '0') + ':' + secondsRemaining.toString().padStart(2, '0');
 }

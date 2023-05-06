@@ -129,3 +129,13 @@ function clearResult() {
     let result = document.getElementById('result-screen')
     result.value = ""
 }
+/**
+ * Dice Roll
+ */
+//The dice rool animation gif is set to the variable diceNum1. The result variable is assigned an empty string from the result-screen
+function rollTheDice() {
+    let diceNum1 = document.querySelector(".img1");
+    diceNum1.setAttribute("src", "assests/images/diceroll.gif")
+    let result = document.getElementById('result-screen')
+    result.value = ""
+}

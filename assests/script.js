@@ -202,3 +202,8 @@ function formatTime(seconds) {
     //minutes and seconds are conveted to string, padstart method ensures the minimum length of two by adding a 0
     return minutes.toString().padStart(2, '0') + ':' + secondsRemaining.toString().padStart(2, '0');
 }
+//adds the timer-screen to a variable and updates the screen with formaTimer
+function updateTimer() {
+    const timerScreen = document.getElementById("timer-screen");
+    timerScreen.value = formatTime(timeRemaining);
+}

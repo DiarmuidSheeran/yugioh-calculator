@@ -144,5 +144,25 @@ function rollTheDice() {
         let randomNumber1 = Math.floor(Math.random() * 6) + 1;
         //the random number becomes the the last number on the dice image file name which produces the image of that specific dice
         diceNum1.setAttribute('src', 'assests/images/dice' + randomNumber1 + '.png');
+        //checks what number was generated and prints appropriate result to the result screen
+        if (randomNumber1 === 1) {
+            result.value = "You Rolled a 1!"
+        }
+        else if (randomNumber1 === 2) {
+            result.value = "You Rolled a 2!"
+        }
+        else if (randomNumber1 === 3) {
+            result.value = "You Rolled a 3!"
+        }
+        else if (randomNumber1 === 4) {
+            result.value = "You Rolled a 4!"
+        }
+        else if (randomNumber1 === 5) {
+            result.value = "You Rolled a 5!"
+        }
+        else if (randomNumber1 === 6) {
+            result.value = "You Rolled a 6!"
+        }
+
     }, 2500);
 }

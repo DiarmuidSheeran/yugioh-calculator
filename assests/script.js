@@ -18,4 +18,8 @@ function submitName2() {
 function addToScreen(value) {
     screen.value += value;
 }
+//sets the initial value of 8000 back to the input fieldS
+function clearScreen() {         
+    screen.value = "8000";   
+}
 

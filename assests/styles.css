@@ -15,7 +15,7 @@ body {
     align-items: center;
     padding-bottom: 5px;
 }
-/*------------Style for Player 1------------------*/
+/*------------Style for Player Names------------------*/
 .player-1 {
     padding: 20px;
 }
@@ -29,4 +29,16 @@ body {
     border-color: #ef492f;
     border-radius: 10px; 
 }
-
+.player-2 {
+    padding: 20px;
+}
+#name2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ef492f;
+    border-radius: 10px;
+}

@@ -225,4 +225,11 @@ function play() {
       isPaused = false;
       timer = setInterval(decreaseTimer, 1000);
     }
-  }
+}
+//checks boolean of isPaused and while true timer stopped with clearInterval function
+function pause() {
+    if (!isPaused) {
+      isPaused = true;
+      clearInterval(timer);
+    }
+}

@@ -124,3 +124,8 @@ function resetMatch() {
     reset1.innerHTML = "Wins: 0"
     reset2.innerHTML = "Wins: 0"
 }
+//returns the result screen to an empty string
+function clearResult() {
+    let result = document.getElementById('result-screen')
+    result.value = ""
+}

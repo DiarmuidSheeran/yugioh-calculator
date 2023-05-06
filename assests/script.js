@@ -218,4 +218,11 @@ function decreaseTimer() {
     } else {
       updateTimer();
     }
+}
+//checks boolean of isPaused and while false timer decreases by 1000 milliseconds(one second)
+function play() {
+    if (isPaused) {
+      isPaused = false;
+      timer = setInterval(decreaseTimer, 1000);
+    }
   }

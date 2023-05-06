@@ -68,3 +68,14 @@ body {
     border-radius: 10px;
     margin-top: 10px;
 }
+input[type="text"] {
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ef492f;
+    border-radius: 10px;
+    width: 220px;
+  } 

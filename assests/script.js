@@ -6,6 +6,10 @@ let screen = document.getElementById("result");
 //variables assigned 0 for a starting count
 let winPlayer1 = 0;
 let winPlayer2 = 0;
+//variables for timer
+let timer;
+let timeRemaining = 2400;
+let isPaused = true
 
 //prompt user to enter a name when text field is clicked. Name is stored on the console and the value is passed to variabele playerName1
 function submitName1() {         
@@ -187,4 +191,8 @@ function flipCoin() {
         }
 
     }, 2500);
+}
+
+//function to repersent the time in seconds. variable seconds is a value of the function formatTime
+function formatTime(seconds) {
 }

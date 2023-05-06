@@ -19,6 +19,10 @@ function submitName2() {
     console.log("Player One: " + enterName2)
     playerName2.value = enterName2
 }
+/**
+ * 
+ * functions for player one calculator 
+ */
 //takes the value that is assigned to the input field to give the calculator its initiaL value
 function addToScreen(value) {
     screen.value += value;
@@ -48,7 +52,7 @@ function calculate() {
             winner.innerHTML = "Wins: " + winPlayer2;
             clearScreen()
         }
-    }
+    }     
 }
 //allows user to edit a mistake by using the slice method to remove last value of the screen value string
 function undo() {
@@ -64,4 +68,13 @@ function addToScreen2(value) {
 }
 function clearScreen2() {
     screen2.value = "8000";  
+}
+//resests the wins of both players to 0 when function is called
+function resetMatch() {
+    let reset1 = document.getElementById('p-1-count')
+    let reset2 = document.getElementById('p-2-count')
+    winPlayer1 = 0;
+    winPlayer2 = 0;
+    reset1.innerHTML = "Wins: 0"
+    reset2.innerHTML = "Wins: 0"
 }

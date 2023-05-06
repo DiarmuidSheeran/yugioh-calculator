@@ -43,13 +43,15 @@ function calculate() {
             result.value = playerName2.value + " won this round"
             winPlayer2++;
             winner.innerHTML = "Wins: " + winPlayer2;
-            clearScreen()   
+            clearScreen2()
+            clearScreen()  
        }
        //if false computer prints generic name to screen and adds count to score
        else {
             result.value = "Player 2 won this round"
             winPlayer2++;
             winner.innerHTML = "Wins: " + winPlayer2;
+            clearScreen2()
             clearScreen()
         }
     }

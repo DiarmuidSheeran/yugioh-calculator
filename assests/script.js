@@ -14,3 +14,8 @@ function submitName2() {
     console.log("Player One: " + enterName2)
     playerName2.value = enterName2
 }
+//takes the value that is assigned to the input field to give the calculator its initiaL value
+function addToScreen(value) {
+    screen.value += value;
+}
+

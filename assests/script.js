@@ -166,3 +166,25 @@ function rollTheDice() {
 
     }, 2500);
 }
+/**
+ * Coin Flip
+ */
+//function works as the above function works but for a coin flip
+function flipCoin() {
+    let coinNum1 = document.querySelector(".img2");
+    coinNum1.setAttribute("src", "assests/images/coin-flip.gif")
+    let result = document.getElementById('result-screen')
+    result.value = ""
+    setTimeout(() => {
+        let randomNumber2 = Math.floor(Math.random() * 2) + 1;
+        coinNum1.setAttribute('src', 'assests/images/coin' + randomNumber2 + '.gif');
+
+        if (randomNumber2 === 1) {
+            result.value = "Tails!"
+        }
+        else  {
+            result.value = "Heads!"
+        }
+
+    }, 2500);
+}

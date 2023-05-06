@@ -42,3 +42,19 @@ body {
     border-color: #ef492f;
     border-radius: 10px;
 }
+.player-name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.player-name input[type="text"] {
+    margin-top: 5px;
+    padding: -5px;
+    border-color: #ef492f;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    width: 245px
+  }

@@ -52,7 +52,17 @@ function calculate() {
             winner.innerHTML = "Wins: " + winPlayer2;
             clearScreen()
         }
-    }     
+    }
+    // checks if player 2's count has reached 2. if so it will print result that game has been won and restartMatch is called to revert the wins to 0 
+    if (winPlayer2 === 2) {
+        if(playerName2.value != "") {
+            result.value = playerName2.value + " has won the game!"
+            resetMatch()
+        }else {
+            result.value= "Player 2 has won the game!"
+            resetMatch()
+        }
+    }          
 }
 //allows user to edit a mistake by using the slice method to remove last value of the screen value string
 function undo() {
@@ -68,6 +78,37 @@ function addToScreen2(value) {
 }
 function clearScreen2() {
     screen2.value = "8000";  
+}
+function calculate2() {
+    screen2.value = eval(screen2.value);
+    let result = document.getElementById('result-screen')
+    let winner = document.getElementById('p-1-count')
+    if (eval(screen2.value) === 0) {
+        if (playerName1.value != "") {
+            result.value = playerName1.value + " won this round"
+            winPlayer1++;
+            winner.innerHTML = "Wins: " + winPlayer1;
+            clearScreen2()
+            clearScreen()     
+       }else {
+            result.value = "Player 1 won this round"
+            winPlayer1++;
+            winner.innerHTML = "Wins: " + winPlayer1;
+            clearScreen2()
+            clearScreen()
+        }
+    }
+
+    if (winPlayer1 === 2) {
+        if(playerName1.value != "") {
+            result.value = playerName1.value + " has won the game!"
+            
+            resetMatch()
+        }else{
+            result.value= "Player 2 has won the game!"
+            resetMatch()
+        }
+    }     
 }
 //resests the wins of both players to 0 when function is called
 function resetMatch() {

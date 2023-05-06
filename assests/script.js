@@ -233,3 +233,9 @@ function pause() {
       clearInterval(timer);
     }
 }
+//pauses the timer, sets timeRemaining back to 2400 seconds
+function restart() {
+    pause();
+    timeRemaining = 2400; 
+    updateTimer();
+  }

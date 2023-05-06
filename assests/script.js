@@ -1,7 +1,9 @@
 //Player names stored in these variables
 let playerName1 = document.getElementById("player-1");
 let playerName2 = document.getElementById("player-2");
+//Takes value of result and initializes it to screen
 let screen = document.getElementById("result");
+//variables assigned 0 for a starting count
 let winPlayer1 = 0;
 let winPlayer2 = 0;
 
@@ -30,5 +32,22 @@ function calculate() {
     screen.value = eval(screen.value);
     let result = document.getElementById('result-screen')
     let winner = document.getElementById('p-2-count')
-
+    //check if screen value is = 0
+    if (eval(screen.value) === 0) {
+        //check if playerName2 has content, if true print message with player 2's name and add a count to player 2's score
+        if (playerName2.value != "") {
+            result.value = playerName2.value + " won this round"
+            winPlayer2++;
+            winner.innerHTML = "Wins: " + winPlayer2;
+            clearScreen()   
+       }
+       //if false computer prints generic name to screen and adds count to score
+       else {
+            result.value = "Player 2 won this round"
+            winPlayer2++;
+            winner.innerHTML = "Wins: " + winPlayer2;
+            clearScreen()
+        }
+    }
 }
+

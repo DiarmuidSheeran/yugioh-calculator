@@ -142,5 +142,7 @@ function rollTheDice() {
     setTimeout(() => {
         //assign a random number between 1 and 6 to randomNumber1
         let randomNumber1 = Math.floor(Math.random() * 6) + 1;
+        //the random number becomes the the last number on the dice image file name which produces the image of that specific dice
+        diceNum1.setAttribute('src', 'assests/images/dice' + randomNumber1 + '.png');
     }, 2500);
 }

@@ -138,4 +138,7 @@ function rollTheDice() {
     diceNum1.setAttribute("src", "assests/images/diceroll.gif")
     let result = document.getElementById('result-screen')
     result.value = ""
+    //create timer for the gif animation length
+    setTimeout(() => {
+    }, 2500);
 }

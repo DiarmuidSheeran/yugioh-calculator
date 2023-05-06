@@ -207,3 +207,15 @@ function updateTimer() {
     const timerScreen = document.getElementById("timer-screen");
     timerScreen.value = formatTime(timeRemaining);
 }
+//timer is decreased by one second, if time reaches 0 timer is stopped and string posted to result screen
+function decreaseTimer() {
+    timeRemaining--;
+    let result = document.getElementById('result-screen')
+    if (timeRemaining < 0) {
+      clearInterval(timer);
+      result.value = "Its a draw!"
+      //while timeRemaining is greater than 0 updateTimer function is called
+    } else {
+      updateTimer();
+    }
+  }

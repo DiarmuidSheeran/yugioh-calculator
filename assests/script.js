@@ -140,5 +140,7 @@ function rollTheDice() {
     result.value = ""
     //create timer for the gif animation length
     setTimeout(() => {
+        //assign a random number between 1 and 6 to randomNumber1
+        let randomNumber1 = Math.floor(Math.random() * 6) + 1;
     }, 2500);
 }

@@ -154,7 +154,6 @@ button:active {
     color: #ffffff;
     font-size: 20px;
     padding: 5px;
-
 }
 #p-2-count {
     border-width: 2px;
@@ -164,5 +163,21 @@ button:active {
     color: #ffffff;
     font-size: 20px;
     padding: 5px;
-
+}
+#results {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#results input[type="text"] {
+    margin-top: -5px; /* Adjust the margin value as per your preference */
+    padding: 10px;
+    border-color: #ef492f;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 520px;
+    height: 50px;
+    margin-bottom: 5px;
 }

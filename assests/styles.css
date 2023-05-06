@@ -1,0 +1,11 @@
+/*------------body and head style-------------*/
+body { 
+    background-color: #000000;
+    color: #ffffff;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 

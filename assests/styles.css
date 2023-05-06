@@ -8,10 +8,25 @@ body {
     justify-content: center;
     align-items: center;
  }
-/*-------------Style for calculator container-------------------*/
+/*-------------Style for container-------------------*/
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
 }
+/*------------Style for Player 1------------------*/
+.player-1 {
+    padding: 20px;
+}
+#name1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ef492f;
+    border-radius: 10px; 
+}
+

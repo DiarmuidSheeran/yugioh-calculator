@@ -182,6 +182,16 @@ button:active {
     height: 50px;
     margin-bottom: 5px;
 }
+/*------------Reset Button Section-----------*/
+.reset-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#game-reset-button{
+    width: 240px;
+    font-size: 20px;
+}
 /*---------timer section------------*/
 #timer {
     display: flex;
@@ -236,4 +246,5 @@ button:active {
     background-color: #ffffff;
     color: #ffae00;
 }
+
 

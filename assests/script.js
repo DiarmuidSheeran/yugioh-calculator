@@ -195,4 +195,8 @@ function flipCoin() {
 
 //function to repersent the time in seconds. variable seconds is a value of the function formatTime
 function formatTime(seconds) {
+    //function divides the seconds by 60 rounding the number down and leaving no decimal place.
+    let minutes = Math.floor(seconds / 60);
+    //when seconds are divided by 60 the modulo operator finds the remainder of seconds
+    let secondsRemaining = seconds % 60;
 }

@@ -112,6 +112,9 @@ function calculate2() {
         }
     }     
 }
+function undo2() {
+    screen2.value = screen2.value.slice(0, -1);
+}
 //resests the wins of both players to 0 when function is called
 function resetMatch() {
     let reset1 = document.getElementById('p-1-count')

@@ -8,4 +8,10 @@ body {
     justify-content: center;
     align-items: center;
  }
- 
+/*-------------Style for calculator container-------------------*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}

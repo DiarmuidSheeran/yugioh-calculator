@@ -164,6 +164,7 @@ button:active {
     font-size: 20px;
     padding: 5px;
 }
+/*------------results section---------------*/
 #results {
     display: flex;
     justify-content: center;
@@ -181,6 +182,7 @@ button:active {
     height: 50px;
     margin-bottom: 5px;
 }
+/*---------timer section------------*/
 #timer {
     display: flex;
     justify-content: center;
@@ -198,3 +200,40 @@ button:active {
     height: 50px;
     margin-bottom: 5px;
 }
+.timer{
+    display: flex;
+    justify-content: center; 
+}
+.timer button{
+    margin-left: 20px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+}
+#play {  
+    background-color: #ef492f;
+    font-size: 13px;
+    text-align: center;
+}
+#play:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#pause {  
+    background-color: #ef492f;
+    font-size: 13px;
+    text-align: center;
+}
+#pause:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#restart {   
+    background-color: #ef492f;
+    font-size: 13px;
+    text-align: center;
+}
+#restart:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+

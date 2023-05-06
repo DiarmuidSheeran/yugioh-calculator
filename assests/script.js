@@ -1,6 +1,9 @@
 //Player names stored in these variables
 let playerName1 = document.getElementById("player-1");
 let playerName2 = document.getElementById("player-2");
+let screen = document.getElementById("result");
+let winPlayer1 = 0;
+let winPlayer2 = 0;
 
 //prompt user to enter a name when text field is clicked. Name is stored on the console and the value is passed to variabele playerName1
 function submitName1() {         
@@ -18,7 +21,7 @@ function submitName2() {
 function addToScreen(value) {
     screen.value += value;
 }
-//sets the initial value of 8000 back to the input fieldS
+//sets the initial value of 8000 back to the input fields
 function clearScreen() {         
     screen.value = "8000";   
 }

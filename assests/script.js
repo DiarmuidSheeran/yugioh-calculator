@@ -55,3 +55,13 @@ function undo() {
     screen.value = screen.value.slice(0, -1);
 }
 
+/**
+ * The same functions repeated for player 2
+ */
+let screen2 = document.getElementById("result-2");
+function addToScreen2(value) {
+    screen2.value += value;
+}
+function clearScreen2() {
+    screen2.value = "8000";  
+}

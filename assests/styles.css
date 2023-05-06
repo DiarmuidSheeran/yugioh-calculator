@@ -97,3 +97,52 @@ button {
     height: 50px;
     margin: 8px;
 }
+button:hover {
+    background-color: rgb(111, 110, 110);
+}
+button:active {
+    background-color: rgb(232, 232, 232)
+}
+#equals {
+    background-color: #ef492f;
+}
+#equals:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#reset {
+    background-color: #ef492f;
+    font-size: 13px;
+    text-align: center;
+}
+#reset:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#undo {
+    background-color: #ef492f;
+    font-size: 13px;
+    text-align: center;
+}
+#undo:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#plus {
+    background-color: #ef492f;
+    font-size: 25px;
+    text-align: center;
+}
+#plus:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#minus {
+    background-color: #ef492f;
+    font-size: 25px;
+    text-align: center;
+}
+#minus:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}

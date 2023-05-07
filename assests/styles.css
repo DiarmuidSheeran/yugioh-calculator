@@ -303,5 +303,10 @@ a {
         width: 500px;
         height: 150px;
     }
-    
+    button {
+        font-size: 20px;
+    }
+    .player-name input[type="text"] {
+        width: 150px;
+    }
 }

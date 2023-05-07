@@ -312,5 +312,14 @@ a {
     }
 }
 @media (min-width: 400px) and (max-width: 599px) {
-
+    .logo img {
+        width: 300px;
+        height: 100px;
+        margin-left: 15px;
+        margin-bottom: -30px;
+    }
+    .player-name input[type="text"] {
+        font-size: 10px;
+        width: 120px;
+    }
 }

@@ -361,3 +361,6 @@ a {
         font-size: 15px;
     }
 }
+@media (min-width: 300px) and (max-width: 399px) {
+
+}

@@ -411,4 +411,12 @@ a {
         width: 160px;
         font-size: 15px;
     }
+    .player-1 {
+        padding: 2px;
+        font-size: 10px;
+    }
+    .player-2 {
+        padding: 2px;
+        font-size: 10px;
+    }
 }

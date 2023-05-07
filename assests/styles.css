@@ -335,4 +335,7 @@ a {
         width: 30px;
         height: 30px; 
     }
+    .calculator {
+        padding: 0px; 
+    }
 }

@@ -338,4 +338,16 @@ a {
     .calculator {
         padding: 0px; 
     }
+    #undo {
+        font-size: 8px;
+    }
+    #reset {
+        font-size: 6px;
+    }
+    #plus {
+        font-size: 15px;
+    }
+    #minus {
+        font-size: 15px;
+    }
 }

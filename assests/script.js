@@ -41,7 +41,7 @@ function calculate() {
     let result = document.getElementById('result-screen')
     let winner = document.getElementById('p-2-count')
     //check if screen value is = 0
-    if (eval(screen.value) === 0) {
+    if (eval(screen.value) <= 0) {
         //check if playerName2 has content, if true print message with player 2's name and add a count to player 2's score
         if (playerName2.value != "") {
             result.value = playerName2.value + " won this round"
@@ -89,7 +89,7 @@ function calculate2() {
     screen2.value = eval(screen2.value);
     let result = document.getElementById('result-screen')
     let winner = document.getElementById('p-1-count')
-    if (eval(screen2.value) === 0) {
+    if (eval(screen2.value) <= 0) {
         if (playerName1.value != "") {
             result.value = playerName1.value + " won this round"
             winPlayer1++;

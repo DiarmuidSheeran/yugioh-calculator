@@ -327,4 +327,12 @@ a {
         margin: 5px;
         font-size: 15px;
       } 
+    .buttons {
+        width: 150px;
+    }
+    button {
+        font-size: 15px;
+        width: 30px;
+        height: 30px; 
+    }
 }

@@ -288,3 +288,13 @@ a {
     color: #ffffff;
     padding-left: 20px;
 }
+
+/*-------media query for tablet---------*/
+@media (max-width: 900px) {
+    button {
+      font-size: 30px;
+    }
+    .player-name input[type="text"] {
+        width: 180px;
+    }
+}

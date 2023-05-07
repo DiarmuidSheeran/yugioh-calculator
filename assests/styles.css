@@ -322,4 +322,9 @@ a {
         font-size: 10px;
         width: 120px;
     }
+    input[type="text"] {
+        width: 132px;
+        margin: 5px;
+        font-size: 15px;
+      } 
 }

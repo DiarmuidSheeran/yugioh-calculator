@@ -389,5 +389,16 @@ a {
         width: 130px;
         font-size: 15px;
     }
-    
+    #undo {
+        font-size: 4px;  
+    }
+    #reset {
+        font-size: 3px;
+    }
+    #plus {
+        font-size: 15px;
+    }
+    #minus {
+        font-size: 15px;
+    }
 }

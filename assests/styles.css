@@ -401,4 +401,14 @@ a {
     #minus {
         font-size: 15px;
     }
+    #results input[type="text"] {
+        margin-top: 5px; /* Adjust the margin value as per your preference */
+        font-size: 15px;
+        width: 280px;
+        height: auto;
+    }
+    #game-reset-button{
+        width: 160px;
+        font-size: 15px;
+    }
 }

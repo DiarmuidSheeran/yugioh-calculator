@@ -37,11 +37,13 @@ function clearScreen() {
 }
 //eval object checks the screens value and makes calculation when = operand is clicked
 function calculate() {
+    screen.value = eval(screen.value);
+    let result = document.getElementById('result-screen');
+    let winner = document.getElementById('p-2-count');
     //while loop keeps playing until score reaches 0
     while (eval(screen.value) <= 0) {
-        screen.value = eval(screen.value);
-        let result = document.getElementById('result-screen');
-        let winner = document.getElementById('p-2-count');
+        
+        
         //check if screen value is = 0
     
             
@@ -56,27 +58,35 @@ function calculate() {
             break;
         }
         //if false computer prints generic name to screen and adds count to score
-        else {
+        else if (playerName2.value === ""){
             result.value = "Player 2 won this round";
             winPlayer2++;
             winner.innerHTML = "Wins: " + winPlayer2;
             clearScreen2();
             clearScreen();
             break;
-            }
+        }
+        else {
+            calculate()
+        }
+    }
+        
         
         // checks if player 2's count has reached 2. if so it will print result that game has been won and restartMatch is called to revert the wins to 0 
         if (winPlayer2 === 2) {
             if(playerName2.value != "") {
                 result.value = playerName2.value + " has won the game!";
                 resetMatch();
+                clearScreen2();
+                clearScreen();
             }else {
                 result.value= "Player 2 has won the game!";
                 resetMatch();
-                break;
+                clearScreen2();
+                clearScreen();
             }
         }          
-    }
+    
 }
 //allows user to edit a mistake by using the slice method to remove last value of the screen value string
 function undo() {

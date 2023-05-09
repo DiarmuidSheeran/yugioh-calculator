@@ -37,38 +37,46 @@ function clearScreen() {
 }
 //eval object checks the screens value and makes calculation when = operand is clicked
 function calculate() {
-    screen.value = eval(screen.value);
-    let result = document.getElementById('result-screen')
-    let winner = document.getElementById('p-2-count')
-    //check if screen value is = 0
-    if (eval(screen.value) <= 0) {
+    //while loop keeps playing until score reaches 0
+    while (eval(screen.value) <= 0) {
+        screen.value = eval(screen.value);
+        let result = document.getElementById('result-screen');
+        let winner = document.getElementById('p-2-count');
+        //check if screen value is = 0
+    
+            
+            
         //check if playerName2 has content, if true print message with player 2's name and add a count to player 2's score
         if (playerName2.value != "") {
-            result.value = playerName2.value + " won this round"
+            result.value = playerName2.value + " won this round";
             winPlayer2++;
             winner.innerHTML = "Wins: " + winPlayer2;
-            clearScreen2()
-            clearScreen()  
-       }
-       //if false computer prints generic name to screen and adds count to score
-       else {
-            result.value = "Player 2 won this round"
-            winPlayer2++;
-            winner.innerHTML = "Wins: " + winPlayer2;
-            clearScreen2()
-            clearScreen()
+            clearScreen2();
+            clearScreen();
+            break;
         }
+        //if false computer prints generic name to screen and adds count to score
+        else {
+            result.value = "Player 2 won this round";
+            winPlayer2++;
+            winner.innerHTML = "Wins: " + winPlayer2;
+            clearScreen2();
+            clearScreen();
+            break;
+            }
+        
+        // checks if player 2's count has reached 2. if so it will print result that game has been won and restartMatch is called to revert the wins to 0 
+        if (winPlayer2 === 2) {
+            if(playerName2.value != "") {
+                result.value = playerName2.value + " has won the game!";
+                resetMatch();
+            }else {
+                result.value= "Player 2 has won the game!";
+                resetMatch();
+                break;
+            }
+        }          
     }
-    // checks if player 2's count has reached 2. if so it will print result that game has been won and restartMatch is called to revert the wins to 0 
-    if (winPlayer2 === 2) {
-        if(playerName2.value != "") {
-            result.value = playerName2.value + " has won the game!"
-            resetMatch()
-        }else {
-            result.value= "Player 2 has won the game!"
-            resetMatch()
-        }
-    }          
 }
 //allows user to edit a mistake by using the slice method to remove last value of the screen value string
 function undo() {

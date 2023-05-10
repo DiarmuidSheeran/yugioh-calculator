@@ -11,6 +11,7 @@ let timer;
 let timeRemaining = 2400;
 let isPaused = true;
 
+
 //prompt user to enter a name when text field is clicked. Name is stored on the console and the value is passed to variabele playerName1
 function submitName1() {
     let enterName1 = prompt("Enter Player Ones Name: ");
@@ -37,17 +38,30 @@ function clearScreen() {
 }
 //eval object checks the screens value and makes calculation when = operand is clicked
 function calculate() {
-    screen.value = eval(screen.value);
+    if (screen.value.includes('-')){
+        let lifePoints = screen.value.split('-');
+        if(lifePoints.length === 2) {
+            let playerLifePoints = parseInt(lifePoints[0]);
+            let battleDamage = parseInt(lifePoints[1]);
+            let damageTaken = playerLifePoints - battleDamage;
+            screen.value = damageTaken.toString();
+        } 
+    }
+    if (screen.value.includes('+')){
+        let lifePoints = screen.value.split('+');
+        if(lifePoints.length === 2) {
+            let playerLifePoints = parseInt(lifePoints[0]);
+            let battleDamage = parseInt(lifePoints[1]);
+            let damageTaken = playerLifePoints + battleDamage;
+            screen.value = damageTaken.toString();
+        }
+    }
+   
     let result = document.getElementById('result-screen');
     let winner = document.getElementById('p-2-count');
     //while loop keeps playing until score reaches 0
-    while (eval(screen.value) <= 0) {
-
-
+    while (screen.value <= 0) {
         //check if screen value is = 0
-
-
-
         //check if playerName2 has content, if true print message with player 2's name and add a count to player 2's score
         if (playerName2.value != "") {
             result.value = playerName2.value + " won this round";
@@ -71,6 +85,7 @@ function calculate() {
     }
 
 
+
     // checks if player 2's count has reached 2. if so it will print result that game has been won and restartMatch is called to revert the wins to 0 
     if (winPlayer2 === 2) {
         if (playerName2.value != "") {
@@ -85,6 +100,7 @@ function calculate() {
             clearScreen();
         }
     }
+
 
 }
 //allows user to edit a mistake by using the slice method to remove last value of the screen value string
@@ -106,10 +122,27 @@ function clearScreen2() {
 }
 
 function calculate2() {
-    screen2.value = eval(screen2.value);
+    if (screen2.value.includes('-')){
+        let lifePoints = screen2.value.split('-');
+        if(lifePoints.length === 2) {
+            let playerLifePoints = parseInt(lifePoints[0]);
+            let battleDamage = parseInt(lifePoints[1]);
+            let damageTaken = playerLifePoints - battleDamage;
+            screen2.value = damageTaken.toString();
+        } 
+    }
+    if (screen2.value.includes('+')){
+        let lifePoints = screen2.value.split('+');
+        if(lifePoints.length === 2) {
+            let playerLifePoints = parseInt(lifePoints[0]);
+            let battleDamage = parseInt(lifePoints[1]);
+            let damageTaken = playerLifePoints + battleDamage;
+            screen2.value = damageTaken.toString();
+        }
+    }
     let result = document.getElementById('result-screen');
     let winner = document.getElementById('p-1-count');
-    if (eval(screen2.value) <= 0) {
+    if ((screen2.value) <= 0) {
         if (playerName1.value != "") {
             result.value = playerName1.value + " won this round";
             winPlayer1++;

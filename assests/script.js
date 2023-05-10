@@ -38,6 +38,8 @@ function clearScreen() {
 }
 //eval object checks the screens value and makes calculation when = operand is clicked
 function calculate() {
+    let result = document.getElementById('result-screen');
+    let winner = document.getElementById('p-2-count');
     if (screen.value.includes('-')){
         let lifePoints = screen.value.split('-');
         if(lifePoints.length === 2) {
@@ -45,7 +47,10 @@ function calculate() {
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints - battleDamage;
             screen.value = damageTaken.toString();
-        } 
+        }else if (lifePoints.length > 2){
+            result.value = "Only one calculation allowed at a time!"
+            undo()
+        }
     }
     if (screen.value.includes('+')){
         let lifePoints = screen.value.split('+');
@@ -54,11 +59,13 @@ function calculate() {
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints + battleDamage;
             screen.value = damageTaken.toString();
+        }else if (lifePoints.length > 2){
+            result.value = "Only one calculation allowed at a time!"
+            undo()
         }
     }
    
-    let result = document.getElementById('result-screen');
-    let winner = document.getElementById('p-2-count');
+   
     //while loop keeps playing until score reaches 0
     while (screen.value <= 0) {
         //check if screen value is = 0

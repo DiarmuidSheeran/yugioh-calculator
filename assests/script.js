@@ -47,6 +47,7 @@ function calculate() {
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints - battleDamage;
             screen.value = damageTaken.toString();
+            result.value = "Player 1 just lost: " + battleDamage + " life points"
         }else if (lifePoints.length > 2){
             result.value = "Only one calculation allowed at a time!"
             undo()
@@ -129,6 +130,9 @@ function clearScreen2() {
 }
 
 function calculate2() {
+    let result = document.getElementById('result-screen');
+    let winner = document.getElementById('p-1-count');
+
     if (screen2.value.includes('-')){
         let lifePoints = screen2.value.split('-');
         if(lifePoints.length === 2) {
@@ -136,7 +140,11 @@ function calculate2() {
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints - battleDamage;
             screen2.value = damageTaken.toString();
-        } 
+            result.value = "Player 2 just lost: " + battleDamage + " life points"
+        }else if (lifePoints.length > 2){
+            result.value = "Only one calculation allowed at a time!"
+            undo()
+        }
     }
     if (screen2.value.includes('+')){
         let lifePoints = screen2.value.split('+');
@@ -145,10 +153,12 @@ function calculate2() {
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints + battleDamage;
             screen2.value = damageTaken.toString();
+        }else if (lifePoints.length > 2){
+            result.value = "Only one calculation allowed at a time!"
+            undo()
         }
     }
-    let result = document.getElementById('result-screen');
-    let winner = document.getElementById('p-1-count');
+   
     if ((screen2.value) <= 0) {
         if (playerName1.value != "") {
             result.value = playerName1.value + " won this round";

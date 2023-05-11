@@ -6,7 +6,6 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: lato, sans sans-serif;
-    
 }
 .logo{
     display: flex;
@@ -23,29 +22,41 @@ body {
 /*------------Style for Player Names------------------*/
 .player-1 {
     padding: 20px;
+    
 }
 #name1 {
     display: flex;
+    background-color: #ef492f;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #000000;
+    font-family: monospace;
+    font-style: oblique;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     border-width: 2px;
     border-style: solid;
     border-color: #ef492f;
     border-radius: 10px; 
 }
+
 .player-2 {
     padding: 20px;
 }
 #name2 {
     display: flex;
+    background-color: #ef492f;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #000000;
+    font-family: monospace;
+    font-style: oblique;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     border-width: 2px;
     border-style: solid;
     border-color: #ef492f;
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 .player-name {
     display: flex;
@@ -61,11 +72,18 @@ body {
     border-radius: 10px;
     font-size: 20px;
     margin-bottom: 5px;
-    width: 245px
+    width: 245px;
+    background-color: #000000
+    color: #ffffff;
+    font-weight: bold;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 /*----------Calculator Style----------------*/
 .calculator {
-    background-color: #000000;
+    background-color: #717E8E;
+   
     padding: 10px;
     border-width: 2px;
     border-style: solid;

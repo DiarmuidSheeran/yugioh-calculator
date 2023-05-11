@@ -1,11 +1,11 @@
 /*------------body and head style-------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body { 
     background-color: #000000;
     color: #ffffff;
-    font-family: lato, sans sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 .logo{
     display: flex;
@@ -83,24 +83,24 @@ body {
 /*----------Calculator Style----------------*/
 .calculator {
     background-color: #ef492f;
-   
     padding: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: #ef492f;
+    border-color: #717E8E;
     border-radius: 10px;
     margin-top: 10px;
 }
 .calculator input[type="text"] {
-    background-color: #ffffff;
+    background-color: #000000;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     font-size: 40px;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
-    border-color: #000000;
+    border-color: #717E8E;
     border-radius: 10px;
     width: 220px;
+    font-family: 'Anton', sans-serif;
 }
 .buttons {
     width: 220px;
@@ -234,22 +234,24 @@ button:active {
     color: #ffae00;
 }
 #p-1-count {
-    border-width: 2px;
+    border-width: 5px;
     border-style: solid;
-    border-color: #ef492f;
+    border-color: #717E8E;
     border-radius: 10px;
     color: #ffffff;
     font-size: 20px;
     padding: 5px;
+    background-color: #000000;
 }
 #p-2-count {
-    border-width: 2px;
+    border-width: 5px;
     border-style: solid;
-    border-color: #ef492f;
+    border-color: #717E8E;
     border-radius: 10px;
     color: #ffffff;
     font-size: 20px;
     padding: 5px;
+    background-color: #000000;
 }
 /*------------results section---------------*/
 #results {
@@ -281,8 +283,20 @@ button:active {
 #game-reset-button{
     width: 240px;
     font-size: 20px;
-    border-width: 5px;
+    border-width: 2px;
+    border-color: #717E8E;
+    color: #ffffff;
+    background-color: #ef492f;
+    font-weight: bold;
+}
+#game-reset-button:hover{
+    width: 260px;
+    font-size: 20px;
+    border-width: 2px;
     border-color: #ef492f;
+    color: #000000;
+    background-color: #717E8E;
+    font-weight: bold;
 }
 /*---------timer section------------*/
 #timer {
@@ -316,7 +330,7 @@ button:active {
 }
 #play {  
     background-color: #ef492f;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
 }
 #play:hover {
@@ -325,7 +339,7 @@ button:active {
 }
 #pause {  
     background-color: #ef492f;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
 }
 #pause:hover {
@@ -334,7 +348,7 @@ button:active {
 }
 #restart {   
     background-color: #ef492f;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
 }
 #restart:hover {
@@ -348,7 +362,7 @@ button:active {
     align-items: center;
 }
 .tool {
-    border-color: #ef492f;
+    border-color: #717E8E;
     border-width: 2px;
     border-style: solid;
     border-radius: 100px;
@@ -357,12 +371,13 @@ button:active {
     height: 200px;
     padding: 0px;
     justify-content: center;
+    background-color: #ef492f;
 }
 footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    align-items: center;   
+    align-items: center; 
 }
 .links {
     margin-top: 5px;
@@ -372,6 +387,7 @@ footer {
     border-radius: 10px;
     width: 520px;
     height: 40px;
+    background-color: #ef492f;
 }
 .links a i {
     padding-top: 20px;

@@ -1,7 +1,11 @@
 /*------------body and head style-------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300;500&display=swap');
+
 body { 
     background-color: #000000;
     color: #ffffff;
+    font-family: lato, sans sans-serif;
     
 }
 .logo{
@@ -104,46 +108,94 @@ button:hover {
 button:active {
     background-color: rgb(232, 232, 232)
 }
-#equals {
+#equals1 {
     background-color: #ef492f;
+    
 }
-#equals:hover {
+#equals1:hover {
     background-color: #ffffff;
     color: #ffae00;
 }
-#reset {
-    background-color: #ef492f;
-    font-size: 13px;
-    text-align: center;
-}
-#reset:hover {
-    background-color: #ffffff;
-    color: #ffae00;
-}
-#undo {
+#reset1 {
     background-color: #ef492f;
     font-size: 13px;
     text-align: center;
+    font-weight: bolder;
 }
-#undo:hover {
+#reset1:hover {
     background-color: #ffffff;
     color: #ffae00;
 }
-#plus {
+#undo1 {
+    background-color: #ef492f;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bolder;
+}
+#undo1:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#plus1 {
+    background-color: #ef492f;
+    font-size: 25px;
+    
+}
+#plus1:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#minus1 {
     background-color: #ef492f;
     font-size: 25px;
     text-align: center;
 }
-#plus:hover {
+#minus1:hover {
     background-color: #ffffff;
     color: #ffae00;
 }
-#minus {
+#equals2 {
+    background-color: #ef492f;
+}
+#equals2:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#reset2 {
+    background-color: #ef492f;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bolder;
+}
+#reset2:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#undo2 {
+    background-color: #ef492f;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bolder;
+}
+#undo2:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#plus2 {
+    background-color: #ef492f;
+    font-size: 25px;
+    
+}
+#plus2:hover {
+    background-color: #ffffff;
+    color: #ffae00;
+}
+#minus2 {
     background-color: #ef492f;
     font-size: 25px;
     text-align: center;
 }
-#minus:hover {
+#minus2:hover {
     background-color: #ffffff;
     color: #ffae00;
 }

@@ -22,7 +22,7 @@
                 <input type="text" class="player-name" value="" placeholder="Name:" id="player-1" onclick="submitName1()">  
             </div>
             <div class="calculator">
-                <input type="text" id="result" value="8000" disabled>
+                <input type="text" id="result" aria-labelledby="calculator" value="8000" disabled>
                 <br>
                 <div class="buttons">
                     <button onclick="addToScreen('7')">7</button>
@@ -35,11 +35,11 @@
                     <button onclick="addToScreen('2')">2</button>
                     <button onclick="addToScreen('3')">3</button>
                     <button onclick="addToScreen('0')">0</button>
-                    <button onclick="addToScreen('+')" id="plus">+</button>
-                    <button onclick="addToScreen('-')" id="minus">-</button>
-                    <button onclick="clearScreen()" id="reset">Reset</button>
-                    <button onclick="calculate()" id="equals">=</button>
-                    <button onclick="undo()" id="undo">Undo</button>
+                    <button onclick="addToScreen('+')" id="plus1">+</button>
+                    <button onclick="addToScreen('-')" id="minus1">-</button>
+                    <button onclick="clearScreen()" id="reset1">Reset</button>
+                    <button onclick="calculate()" id="equals1">=</button>
+                    <button onclick="undo()" id="undo1">Undo</button>
                     <br>
                     <p id="p-1-count">Wins: 0</p>    
                 </div>
@@ -51,7 +51,7 @@
                 <input type="text" class="player-name" value="" placeholder="Name:" id="player-2" onclick="submitName2()">
             </div> 
             <div class="calculator">
-                <input type="text" id="result-2" value="8000" disabled>
+                <input type="text" id="result-2" aria-labelledby="calculator" value="8000" disabled>
                 <br/>
                 <div class="buttons">
                     <button onclick="addToScreen2('7')">7</button>
@@ -64,11 +64,11 @@
                     <button onclick="addToScreen2('2')">2</button>
                     <button onclick="addToScreen2('3')">3</button>
                     <button onclick="addToScreen2('0')">0</button>
-                    <button onclick="addToScreen2('+')" id="plus">+</button>
-                    <button onclick="addToScreen2('-')" id="minus">-</button>
-                    <button onclick="clearScreen2()" id="reset">Reset</button>
-                    <button onclick="calculate2()" id="equals">=</button>
-                    <button onclick="undo2()" id="undo">Undo</button>
+                    <button onclick="addToScreen2('+')" id="plus2">+</button>
+                    <button onclick="addToScreen2('-')" id="minus2">-</button>
+                    <button onclick="clearScreen2()" id="reset2">Reset</button>
+                    <button onclick="calculate2()" id="equals2">=</button>
+                    <button onclick="undo2()" id="undo2">Undo</button>
                     <br>
                     <p id="p-2-count">Wins: 0</h6>
                 </div>  
@@ -76,18 +76,18 @@
          </section>
     </div>
     <div id="results">
-        <input type="text"  id="result-screen" value="" onclick="clearResult()" disabled>  
+        <input type="text"  id="result-screen" aria-labelledby="results" value="" onclick="clearResult()" disabled>  
     </div>
     <div class="reset-button">
         <button id="game-reset-button" onclick="resetMatch()">Reset Match Score</button>
     </div>
     <div id="timer">
-        <input type="text" id="timer-screen" value="40:00"  disabled >
+        <input type="text" id="timer-screen" aria-labelledby="timer" value="40:00"  disabled >
      </div>
      <div class="timer">
-        <button id="play" onclick="play()"><i class="fa-solid fa-play"></i></button> 
-        <button id="pause" onclick="pause()"><i class="fa-solid fa-pause"></i></button> 
-        <button id="restart" onclick="restart()"> <i class="fa-solid fa-backward"></i></button>  
+        <button id="play" onclick="play()">Play<i class="fa-solid fa-play"></i></button> 
+        <button id="pause" onclick="pause()">Pause<i class="fa-solid fa-pause"></i></button> 
+        <button id="restart" onclick="restart()">Reset <i class="fa-solid fa-backward"></i></button>  
     </div>
     <div id="container-tools">
         <button class="tool" onclick="rollTheDice()"><img src="assests/images/dice6.png" width="50px" height="50px" alt="picture of yugioh logo" class="img1"><br> <h7 id="diceTxt">Dice</h7> <br></button>

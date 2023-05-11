@@ -3,7 +3,8 @@ let playerName1 = document.getElementById("player-1");
 let playerName2 = document.getElementById("player-2");
 //Takes value of result and initializes it to screen
 let screen = document.getElementById("result");
-//variables assigned 0 for a starting count
+let screen2 = document.getElementById("result-2");
+//variables assigned 0 for a starting count 
 let winPlayer1 = 0;
 let winPlayer2 = 0;
 //variables for timer
@@ -67,7 +68,7 @@ function calculate() {
     }
    
    
-    //while loop keeps playing until score reaches 0
+    //while loop keeps playing until score reaches 0 th
     while (screen.value <= 0) {
         //check if screen value is = 0
         //check if playerName2 has content, if true print message with player 2's name and add a count to player 2's score
@@ -119,7 +120,6 @@ function undo() {
 /**
  * The same functions repeated for player 2
  */
-let screen2 = document.getElementById("result-2");
 
 function addToScreen2(value) {
     screen2.value += value;

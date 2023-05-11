@@ -73,7 +73,7 @@ body {
     font-size: 20px;
     margin-bottom: 5px;
     width: 245px;
-    background-color: #000000
+    background-color: #000000;
     color: #ffffff;
     font-weight: bold;
     font-family: monospace;
@@ -82,7 +82,7 @@ body {
   }
 /*----------Calculator Style----------------*/
 .calculator {
-    background-color: #717E8E;
+    background-color: #ef492f;
    
     padding: 10px;
     border-width: 2px;
@@ -91,14 +91,14 @@ body {
     border-radius: 10px;
     margin-top: 10px;
 }
-input[type="text"] {
-    background-color: #000000;
+.calculator input[type="text"] {
+    background-color: #ffffff;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     font-size: 40px;
-    border-width: 2px;
+    border-width: 5px;
     border-style: solid;
-    border-color: #ef492f;
+    border-color: #000000;
     border-radius: 10px;
     width: 220px;
 }
@@ -112,7 +112,7 @@ button {
     background-color: #000000;
     border-width: 2px;
     border-style: solid;
-    border-color: #ef492f;
+    border-color: #717E8E;
     border-radius: 10px;
     color: rgb(255, 255, 255);
     font-size: 40px;
@@ -261,13 +261,16 @@ button:active {
     margin-top: -5px; 
     padding: 10px;
     border-color: #ef492f;
-    border-width: 2px;
+    border-width: 5px;
     border-style: solid;
     border-radius: 10px;
     font-size: 20px;
     width: 520px;
     height: 50px;
     margin-bottom: 5px;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
 }
 /*------------Reset Button Section-----------*/
 .reset-button {
@@ -278,6 +281,8 @@ button:active {
 #game-reset-button{
     width: 240px;
     font-size: 20px;
+    border-width: 5px;
+    border-color: #ef492f;
 }
 /*---------timer section------------*/
 #timer {
@@ -289,13 +294,16 @@ button:active {
     margin-top: 5px;
     padding: 5px;
     border-color: #ef492f;
-    border-width: 2px;
+    border-width: 5px;
     border-style: solid;
     border-radius: 25px;
     font-size: 20px;
     width: 50px;
     height: 50px;
     margin-bottom: 5px;
+    background-color: #ffffff;
+    font-weight: bolder;
+    color: #000000;
 }
 .timer{
     display: flex;

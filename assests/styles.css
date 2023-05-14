@@ -414,8 +414,21 @@ a {
         font-size: 20px;
     }
     .player-name input[type="text"] {
-        width: 150px;
+        width: 220px;
     }
+    #name1{
+        font-size: 20px;
+    }
+    #name2{
+        font-size: 20px;
+    }
+    #results input[type="text"] {
+        margin-top: 5px;
+        font-size: 22px;
+        width: 480px;
+        height: auto;
+    }
+    
 }
 @media (min-width: 501px) and (max-width: 600px) {
     .logo img {
@@ -486,7 +499,7 @@ a {
     #results input[type="text"] {
         margin-top: 5px;
         font-size: 12px;
-        width: 280px;
+        width: 400px;
         height: auto;
     }
     #game-reset-button{
@@ -604,7 +617,7 @@ a {
     #results input[type="text"] {
         margin-top: 5px; /* Adjust the margin value as per your preference */
         font-size: 12px;
-        width: 280px;
+        width: 340px;
         height: auto;
     }
     #game-reset-button{
@@ -722,7 +735,7 @@ a {
     #results input[type="text"] {
         margin-top: 5px; /* Adjust the margin value as per your preference */
         font-size: 12px;
-        width: 280px;
+        width: 330px;
         height: auto;
     }
     #game-reset-button{

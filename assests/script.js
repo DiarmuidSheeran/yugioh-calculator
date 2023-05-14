@@ -37,30 +37,33 @@ function addToScreen(value) {
 function clearScreen() {
     screen.value = "8000";
 }
-//eval object checks the screens value and makes calculation when = operand is clicked
+//calculates the lifepoints lost or gained and checks if life point go to 0
 function calculate() {
     let result = document.getElementById('result-screen');
     let winner = document.getElementById('p-2-count');
+    //checks if the screen has a '-' on it and if true splits the strings on either side of it.
     if (screen.value.includes('-')){
         let lifePoints = screen.value.split('-');
+        //checks the variable lifepoints for 2 strings and pasess the two strings into two differnet variables converting them to ints
         if(lifePoints.length === 2) {
             let playerLifePoints = parseInt(lifePoints[0]);
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints - battleDamage;
+            //converts the damageTaken calculation back to a string
             screen.value = damageTaken.toString();
+            //check if playerName1 has a value for results screen if not generic name used
             if (playerName1.value != "") {
                 result.value = playerName1.value + " just lost: " + battleDamage + " life points"
             }else {
                 result.value = "Player 1 just lost: " + battleDamage + " life points"
             }
+            //if the length of the string is greater than 2 an error is posted to result screen and undo function called
         } else if (lifePoints.length > 2){
                 result.value = "Only one calculation allowed at a time!"
                 undo()
             }
     }
-  
-   
-    
+    //same as above if statements but for addition
     if (screen.value.includes('+')){
         let lifePoints = screen.value.split('+');
         if(lifePoints.length === 2) {
@@ -76,13 +79,8 @@ function calculate() {
         }else if (lifePoints.length > 2){
                 result.value = "Only one calculation allowed at a time!"
                 undo()
-            }  
+            } 
     }
-   
-   
-
-   
-   
     //while loop keeps playing until score reaches 0 th
     while (screen.value <= 0) {
         //check if screen value is = 0
@@ -107,9 +105,6 @@ function calculate() {
             calculate();
         }
     }
-
-
-
     // checks if player 2's count has reached 2. if so it will print result that game has been won and restartMatch is called to revert the wins to 0 
     if (winPlayer2 === 2) {
         if (playerName2.value != "") {
@@ -155,11 +150,15 @@ function calculate2() {
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints - battleDamage;
             screen2.value = damageTaken.toString();
-            result.value = "Player 2 just lost: " + battleDamage + " life points"
-        }else if (lifePoints.length > 2){
-            result.value = "Only one calculation allowed at a time!"
-            undo()
-        }
+            if (playerName2.value != "") {
+                result.value = playerName2.value + " just lost: " + battleDamage + " life points"
+            }else {
+                result.value = "Player 2 just lost: " + battleDamage + " life points"
+            }
+        } else if (lifePoints.length > 2){
+                result.value = "Only one calculation allowed at a time!"
+                undo()
+            }
     }
     if (screen2.value.includes('+')){
         let lifePoints = screen2.value.split('+');
@@ -168,12 +167,17 @@ function calculate2() {
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints + battleDamage;
             screen2.value = damageTaken.toString();
+            if (playerName2.value != "") {
+                result.value = playerName2.value + " just gained: " + battleDamage + " life points"
+                }else {
+                    result.value = "Player 2 just gained: " + battleDamage + " life points"
+                }
         }else if (lifePoints.length > 2){
-            result.value = "Only one calculation allowed at a time!"
-            undo()
-        }
+                result.value = "Only one calculation allowed at a time!"
+                undo()
+            } 
     }
-   
+
     if ((screen2.value) <= 0) {
         if (playerName1.value != "") {
             result.value = playerName1.value + " won this round";

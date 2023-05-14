@@ -235,25 +235,25 @@ function rollTheDice() {
         //create timer for the gif animation length
     setTimeout(() => {
         //assign a random number between 1 and 6 to randomNumber1
-        let randomNumber1 = Math.floor(Math.random() * 6) + 1;
+        let randomDice = Math.floor(Math.random() * 6) + 1;
         //the random number becomes the the last number on the dice image file name which produces the image of that specific dice
-        diceNum1.setAttribute('src', 'assests/images/dice' + randomNumber1 + '.png');
+        diceNum1.setAttribute('src', 'assests/images/dice' + randomDice + '.png');
         //checks what number was generated and prints appropriate result to the result screen
-        if (randomNumber1 === 1) {
+        if (randomDice === 1) {
             result.value = "You Rolled a 1!";
-        } else if (randomNumber1 === 2) {
+        } else if (randomDice === 2) {
             result.value = "You Rolled a 2!";
-        } else if (randomNumber1 === 3) {
+        } else if (randomDice === 3) {
             result.value = "You Rolled a 3!";
-        } else if (randomNumber1 === 4) {
+        } else if (randomDice === 4) {
             result.value = "You Rolled a 4!";
-        } else if (randomNumber1 === 5) {
+        } else if (randomDice === 5) {
             result.value = "You Rolled a 5!";
-        } else if (randomNumber1 === 6) {
+        } else if (randomDice === 6) {
             result.value = "You Rolled a 6!";
         }
 
-    }, 2500);
+    }, 2000);
 }
 /**
  * Coin Flip
@@ -265,33 +265,33 @@ function flipCoin() {
     let result = document.getElementById('result-screen');
     result.value = "";
     setTimeout(() => {
-        let randomNumber2 = Math.floor(Math.random() * 2) + 1;
-        coinNum1.setAttribute('src', 'assests/images/coin' + randomNumber2 + '.gif');
+        let randomCoin = Math.floor(Math.random() * 2) + 1;
+        coinNum1.setAttribute('src', 'assests/images/coin' + randomCoin + '.gif');
 
-        if (randomNumber2 === 1) {
+        if (randomCoin === 1) {
             result.value = "Tails!";
         } else {
             result.value = "Heads!";
         }
 
-    }, 2500);
+    }, 2000);
 }
 
-//function to repersent the time in seconds. variable seconds is a value of the function formatTime
+//function to format the time in seconds. variable seconds is a value of the function formatTime
 function formatTime(seconds) {
     //function divides the seconds by 60 rounding the number down and leaving no decimal place.
     let minutes = Math.floor(seconds / 60);
     //when seconds are divided by 60 the modulo operator finds the remainder of seconds
     let secondsRemaining = seconds % 60;
-    //minutes and seconds are conveted to string, padstart method ensures the minimum length of two by adding a 0
+    //minutes and seconds are conveted to string, padstart method ensures the minimum length of two by adding a 0 where needed
     return minutes.toString().padStart(2, '0') + ':' + secondsRemaining.toString().padStart(2, '0');
 }
-//adds the timer-screen to a variable and updates the screen with formaTimer
+//updates the screen with formaTimer
 function updateTimer() {
     const timerScreen = document.getElementById("timer-screen");
     timerScreen.value = formatTime(timeRemaining);
 }
-//timer is decreased by one second, if time reaches 0 timer is stopped and string posted to result screen
+//timer is decreased by one second, if time reaches 0 timer is stopped and a message is posted to result screen
 function decreaseTimer() {
     timeRemaining--;
     let result = document.getElementById('result-screen');
@@ -303,7 +303,7 @@ function decreaseTimer() {
         updateTimer();
     }
 }
-//checks boolean of isPaused and while false timer decreases by 1000 milliseconds(one second)
+//checks boolean of isPaused and timer decreases by 1000 milliseconds(one second)
 function play() {
     if (isPaused) {
         isPaused = false;

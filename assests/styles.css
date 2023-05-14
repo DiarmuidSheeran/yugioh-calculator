@@ -267,7 +267,7 @@ button:active {
     border-style: solid;
     border-radius: 10px;
     font-size: 20px;
-    width: 520px;
+    width: 480px;
     height: 50px;
     margin-bottom: 5px;
     background-color: #000000;
@@ -302,16 +302,16 @@ button:active {
     margin-top: 5px;
     padding: 5px;
     border-color: #ef492f;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
     border-radius: 25px;
     font-size: 20px;
     width: 50px;
     height: 50px;
     margin-bottom: 5px;
-    background-color: #ffffff;
+    background-color: #000000;
     font-weight: bolder;
-    color: #000000;
+    color: #ffffff;
 }
 .timer{
     display: flex;

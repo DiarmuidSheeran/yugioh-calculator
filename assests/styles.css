@@ -134,8 +134,8 @@ button:active {
     
 }
 #equals1:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #reset1 {
     background-color: #ffffff;
@@ -145,8 +145,8 @@ button:active {
     color: #ef492f;
 }
 #reset1:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #undo1 {
     background-color: #ffffff;
@@ -156,8 +156,8 @@ button:active {
     color: #ef492f;
 }
 #undo1:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #plus1 {
     background-color: #ffffff;
@@ -167,8 +167,8 @@ button:active {
     
 }
 #plus1:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #minus1 {
     background-color: #ffffff;
@@ -177,8 +177,8 @@ button:active {
     color: #ef492f;
 }
 #minus1:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #equals2 {
     background-color: #ffffff;
@@ -187,8 +187,8 @@ button:active {
     color: #ef492f;
 }
 #equals2:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #reset2 {
     background-color: #ffffff;
@@ -198,8 +198,8 @@ button:active {
     color: #ef492f;
 }
 #reset2:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #undo2 {
     background-color: #ffffff;
@@ -209,8 +209,8 @@ button:active {
     color: #ef492f;
 }
 #undo2:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #plus2 {
     background-color: #ffffff;
@@ -220,8 +220,8 @@ button:active {
     
 }
 #plus2:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #minus2 {
     background-color: #ffffff;
@@ -230,8 +230,8 @@ button:active {
     color: #ef492f;
 }
 #minus2:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #p-1-count {
     border-width: 5px;
@@ -290,13 +290,7 @@ button:active {
     font-weight: bold;
 }
 #game-reset-button:hover{
-    width: 260px;
-    font-size: 20px;
-    border-width: 2px;
-    border-color: #ef492f;
-    color: #000000;
     background-color: #717E8E;
-    font-weight: bold;
 }
 /*---------timer section------------*/
 #timer {
@@ -334,8 +328,8 @@ button:active {
     text-align: center;
 }
 #play:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #pause {  
     background-color: #ef492f;
@@ -343,8 +337,8 @@ button:active {
     text-align: center;
 }
 #pause:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 #restart {   
     background-color: #ef492f;
@@ -352,8 +346,8 @@ button:active {
     text-align: center;
 }
 #restart:hover {
-    background-color: #ffffff;
-    color: #ffae00;
+    background-color: rgb(111, 110, 110);
+    color: #ffffff;
 }
 /*-------Dice and Coin Section-------------*/
 #container-tools {

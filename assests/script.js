@@ -48,12 +48,19 @@ function calculate() {
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints - battleDamage;
             screen.value = damageTaken.toString();
-            result.value = "Player 1 just lost: " + battleDamage + " life points"
-        }else if (lifePoints.length > 2){
-            result.value = "Only one calculation allowed at a time!"
-            undo()
-        }
+            if (playerName1.value != "") {
+                result.value = playerName1.value + " just lost: " + battleDamage + " life points"
+            }else {
+                result.value = "Player 1 just lost: " + battleDamage + " life points"
+            }
+        } else if (lifePoints.length > 2){
+                result.value = "Only one calculation allowed at a time!"
+                undo()
+            }
     }
+  
+   
+    
     if (screen.value.includes('+')){
         let lifePoints = screen.value.split('+');
         if(lifePoints.length === 2) {
@@ -61,11 +68,19 @@ function calculate() {
             let battleDamage = parseInt(lifePoints[1]);
             let damageTaken = playerLifePoints + battleDamage;
             screen.value = damageTaken.toString();
+            if (playerName1.value != "") {
+                result.value = playerName1.value + " just gained: " + battleDamage + " life points"
+                }else {
+                    result.value = "Player 1 just gained: " + battleDamage + " life points"
+                }
         }else if (lifePoints.length > 2){
-            result.value = "Only one calculation allowed at a time!"
-            undo()
-        }
+                result.value = "Only one calculation allowed at a time!"
+                undo()
+            }  
     }
+   
+   
+
    
    
     //while loop keeps playing until score reaches 0 th

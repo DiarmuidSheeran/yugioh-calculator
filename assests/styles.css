@@ -12,6 +12,14 @@ body {
     justify-content: center;
     align-items: center;
  }
+
+ label {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+ }
 /*-------------Style for container-------------------*/
 .container {
     display: flex;
@@ -130,7 +138,7 @@ button:active {
     background-color: #ffffff;
     font-size: 40px;
     font-weight: 20px;
-    color: #ef492f;
+    color: #000000;
     
 }
 #equals1:hover {
@@ -142,7 +150,7 @@ button:active {
     font-size: 15px;
     text-align: center;
     font-weight: bolder;
-    color: #ef492f;
+    color: #000000;
 }
 #reset1:hover {
     background-color: rgb(111, 110, 110);
@@ -153,7 +161,7 @@ button:active {
     font-size: 15px;
     text-align: center;
     font-weight: bolder;
-    color: #ef492f;
+    color: #000000;
 }
 #undo1:hover {
     background-color: rgb(111, 110, 110);
@@ -163,7 +171,7 @@ button:active {
     background-color: #ffffff;
     font-size: 40px;
     font-weight: 20px;
-    color: #ef492f;
+    color: #000000;
     
 }
 #plus1:hover {
@@ -174,7 +182,7 @@ button:active {
     background-color: #ffffff;
     font-size: 40px;
     font-weight: 20px;
-    color: #ef492f;
+    color: #000000;
 }
 #minus1:hover {
     background-color: rgb(111, 110, 110);
@@ -184,7 +192,7 @@ button:active {
     background-color: #ffffff;
     font-size: 40px;
     font-weight: 20px;
-    color: #ef492f;
+    color: #000000;
 }
 #equals2:hover {
     background-color: rgb(111, 110, 110);
@@ -195,7 +203,7 @@ button:active {
     font-size: 15px;
     text-align: center;
     font-weight: bolder;
-    color: #ef492f;
+    color: #000000;
 }
 #reset2:hover {
     background-color: rgb(111, 110, 110);
@@ -206,7 +214,7 @@ button:active {
     font-size: 15px;
     text-align: center;
     font-weight: bolder;
-    color: #ef492f;
+    color: #000000;
 }
 #undo2:hover {
     background-color: rgb(111, 110, 110);
@@ -216,7 +224,7 @@ button:active {
     background-color: #ffffff;
     font-size: 40px;
     font-weight: 20px;
-    color: #ef492f;
+    color: #000000;
     
 }
 #plus2:hover {
@@ -227,7 +235,7 @@ button:active {
     background-color: #ffffff;
     font-size: 40px;
     font-weight: 20px;
-    color: #ef492f;
+    color: #000000;
 }
 #minus2:hover {
     background-color: rgb(111, 110, 110);
@@ -285,7 +293,7 @@ button:active {
     font-size: 20px;
     border-width: 2px;
     border-color: #717E8E;
-    color: #ffffff;
+    color: #000000;
     background-color: #ef492f;
     font-weight: bold;
 }
@@ -293,13 +301,14 @@ button:active {
     background-color: #717E8E;
 }
 /*---------timer section------------*/
+
 #timer {
     display: flex;
     justify-content: center;
     text-align: center;
 }
+
 #timer input[type="text"] {
-    margin-top: 5px;
     padding: 5px;
     border-color: #ef492f;
     border-width: 2px;
@@ -315,8 +324,10 @@ button:active {
 }
 .timer{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    flex-wrap: wrap; 
 }
+
 .timer button{
     margin-left: 20px;
     margin-right: 25px;
@@ -326,6 +337,7 @@ button:active {
     background-color: #ef492f;
     font-size: 15px;
     text-align: center;
+    color: #000000;
 }
 #play:hover {
     background-color: rgb(111, 110, 110);
@@ -335,6 +347,7 @@ button:active {
     background-color: #ef492f;
     font-size: 15px;
     text-align: center;
+    color: #000000;
 }
 #pause:hover {
     background-color: rgb(111, 110, 110);
@@ -344,6 +357,7 @@ button:active {
     background-color: #ef492f;
     font-size: 15px;
     text-align: center;
+    color: #000000;
 }
 #restart:hover {
     background-color: rgb(111, 110, 110);
@@ -366,6 +380,8 @@ button:active {
     padding: 0px;
     justify-content: center;
     background-color: #ef492f;
+    color: #000000;
+    font-weight: bolder;
 }
 footer {
     display: flex;
@@ -390,7 +406,7 @@ footer {
 }
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     padding-left: 20px;
 }
 

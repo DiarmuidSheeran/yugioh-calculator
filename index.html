@@ -22,9 +22,11 @@
         <section class="player-1">
             <h2 id="name1">Player 1</h2>
             <div class="player-name">
+                <label for="player-1"></label>
                 <input type="text" class="player-name" value="" placeholder="Name:" id="player-1" onclick="submitName1()">  
             </div>
             <div class="calculator">
+                <label for="result">Life Points: <br></label>
                 <input type="text" id="result" aria-labelledby="calculator" value="8000" disabled>
                 <br>
                 <div class="buttons">
@@ -52,9 +54,11 @@
         <section class="player-2">
             <h2 id="name2">Player 2</h2>
             <div class="player-name">
+                <label for="player-2"></label>
                 <input type="text" class="player-name" value="" placeholder="Name:" id="player-2" onclick="submitName2()">
             </div> 
             <div class="calculator">
+                <label for="result-2">Life Points: <br></label>
                 <input type="text" id="result-2" aria-labelledby="calculator" value="8000" disabled>
                 <br/>
                 <div class="buttons">
@@ -76,16 +80,20 @@
                    
                     <br>
                     <p id="p-2-count">Wins: 0</p>
+                    <br>
                 </div>  
             </div>
          </section>
     </div>
+    <label for="result-screen">Results: <br/></label>
     <div id="results">
+        
         <input type="text"  id="result-screen" aria-labelledby="results" value="" onclick="clearResult()" disabled>  
     </div>
     <div class="reset-button">
         <button id="game-reset-button" onclick="resetMatch()">Reset Match Score</button>
     </div>
+    <label for="timer-screen">Timer: <br/></label>
     <div id="timer">
         <input type="text" id="timer-screen" aria-labelledby="timer" value="40:00"  disabled >
      </div> 

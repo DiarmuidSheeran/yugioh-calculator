@@ -53,14 +53,14 @@ function calculate() {
             screen.value = damageTaken.toString();
             //check if playerName1 has a value for results screen if not generic name used
             if (playerName1.value != "") {
-                result.value = playerName1.value + " just lost: " + battleDamage + " life points"
+                result.value = playerName1.value + " just lost: " + battleDamage + " life points";
             }else {
-                result.value = "Player 1 just lost: " + battleDamage + " life points"
+                result.value = "Player 1 just lost: " + battleDamage + " life points";
             }
             //if the length of the string is greater than 2 an error is posted to result screen and undo function called
         } else if (lifePoints.length > 2){
-                result.value = "Only one calculation allowed at a time!"
-                undo()
+                result.value = "Only one calculation allowed at a time!";
+                undo();
             }
     }
     //same as above if statements but for addition
@@ -72,16 +72,16 @@ function calculate() {
             let damageTaken = playerLifePoints + battleDamage;
             screen.value = damageTaken.toString();
             if (playerName1.value != "") {
-                result.value = playerName1.value + " just gained: " + battleDamage + " life points"
+                result.value = playerName1.value + " just gained: " + battleDamage + " life points";
                 }else {
-                    result.value = "Player 1 just gained: " + battleDamage + " life points"
+                    result.value = "Player 1 just gained: " + battleDamage + " life points";
                 }
         }else if (lifePoints.length > 2){
-                result.value = "Only one calculation allowed at a time!"
-                undo()
+                result.value = "Only one calculation allowed at a time!";
+                undo();
             } 
     }
-    //while loop keeps playing until score reaches 0 th
+    //while loop keeps playing until score reaches 0 
     while (screen.value <= 0) {
         //check if screen value is = 0
         //check if playerName2 has content, if true print message with player 2's name and add a count to player 2's score
@@ -122,7 +122,7 @@ function calculate() {
 
 
 }
-//allows user to edit a mistake by using the slice method to remove last value of the screen value string
+//allows user to edit a mistake by using the slice method to remove last value string off the screen 
 function undo() {
     screen.value = screen.value.slice(0, -1);
 }
@@ -151,13 +151,13 @@ function calculate2() {
             let damageTaken = playerLifePoints - battleDamage;
             screen2.value = damageTaken.toString();
             if (playerName2.value != "") {
-                result.value = playerName2.value + " just lost: " + battleDamage + " life points"
+                result.value = playerName2.value + " just lost: " + battleDamage + " life points";
             }else {
-                result.value = "Player 2 just lost: " + battleDamage + " life points"
+                result.value = "Player 2 just lost: " + battleDamage + " life points";
             }
         } else if (lifePoints.length > 2){
-                result.value = "Only one calculation allowed at a time!"
-                undo()
+                result.value = "Only one calculation allowed at a time!";
+                undo();
             }
     }
     if (screen2.value.includes('+')){
@@ -168,13 +168,13 @@ function calculate2() {
             let damageTaken = playerLifePoints + battleDamage;
             screen2.value = damageTaken.toString();
             if (playerName2.value != "") {
-                result.value = playerName2.value + " just gained: " + battleDamage + " life points"
+                result.value = playerName2.value + " just gained: " + battleDamage + " life points";
                 }else {
-                    result.value = "Player 2 just gained: " + battleDamage + " life points"
+                    result.value = "Player 2 just gained: " + battleDamage + " life points";
                 }
         }else if (lifePoints.length > 2){
-                result.value = "Only one calculation allowed at a time!"
-                undo()
+                result.value = "Only one calculation allowed at a time!";
+                undo();
             } 
     }
 
@@ -310,7 +310,7 @@ function play() {
         timer = setInterval(decreaseTimer, 1000);
     }
 }
-//checks boolean of isPaused and while true timer stopped with clearInterval function
+//checks boolean of isPaused, timer stopped with clearInterval function
 function pause() {
     if (!isPaused) {
         isPaused = true;

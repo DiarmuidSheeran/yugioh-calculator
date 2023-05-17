@@ -1,123 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the Yu-Gi-Oh Duel tool. Help keep track of you life points and use the helpful tools included in my site to aid you and your friends in your duels">
-    <meta name="author" content="Diarmuid Sheeran">
-    <meta name="keywords" content="yugioh, YuGiOh, Yu-Gi-Oh, duel, calculator, tool, trading cards, card game, trading card game">
-    <title>Yu-Gi-Oh! Duel App</title>
-    <link rel="stylesheet" href="assests/styles.css">
-</head>
-<body>
-    
-    <header>
-        <div class="logo">
-            <img src="assests/images/logo.png" width="600px" height="200px" alt="picture of yugioh logo">  
-        </div>
-    </header>
-
-    <div class="container">
-        <section class="player-1">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Welcome to the Yu-Gi-Oh Duel tool. Help keep track of you life points and use the helpful tools included in my site to aid you and your friends in your duels">
+      <meta name="author" content="Diarmuid Sheeran">
+      <meta name="keywords" content="yugioh, YuGiOh, Yu-Gi-Oh, duel, calculator, tool, trading cards, card game, trading card game">
+      <title>Yu-Gi-Oh! Duel App</title>
+      <link rel="stylesheet" href="assests/styles.css">
+   </head>
+   <body>
+      <header>
+         <div class="logo">
+            <img src="assests/images/logo.png" width="600" height="200" alt="picture of yugioh logo">  
+         </div>
+      </header>
+      <div class="container">
+         <section class="player-1">
             <h2 id="name1">Player 1</h2>
             <div class="player-name">
-                <label for="player-1"></label>
-                <input type="text" class="player-name" value="" placeholder="Name:" id="player-1" onclick="submitName1()">  
+               <label for="player-1"></label>
+               <input type="text" class="player-name" value="" placeholder="Name:" id="player-1" onclick="submitName1()">  
             </div>
             <div class="calculator">
-                <label for="result">Life Points: <br></label>
-                <input type="text" id="result" aria-labelledby="calculator" value="8000" disabled>
-                <br>
-                <div class="buttons">
-                    <button onclick="addToScreen('7')">7</button>
-                    <button onclick="addToScreen('8')">8</button>
-                    <button onclick="addToScreen('9')">9</button>
-                    <button onclick="addToScreen('4')">4</button>
-                    <button onclick="addToScreen('5')">5</button>
-                    <button onclick="addToScreen('6')">6</button> 
-                    <button onclick="addToScreen('1')">1</button>
-                    <button onclick="addToScreen('2')">2</button>
-                    <button onclick="addToScreen('3')">3</button>
-                    <button onclick="addToScreen('0')">0</button>
-                    <button onclick="addToScreen('+')" id="plus1">+</button>
-                    <button onclick="addToScreen('-')" id="minus1">-</button>
-                    <button onclick="calculate()" id="equals1">=</button>
-                    <button onclick="undo()" id="undo1">Undo</button>
-                    <button onclick="clearScreen()" id="reset1">Reset</button>
-                    
-                    <br>
-                    <p id="p-1-count">Wins: 0</p>    
-                </div>
-            </div>
-        </section>
-        <section class="player-2">
-            <h2 id="name2">Player 2</h2>
-            <div class="player-name">
-                <label for="player-2"></label>
-                <input type="text" class="player-name" value="" placeholder="Name:" id="player-2" onclick="submitName2()">
-            </div> 
-            <div class="calculator">
-                <label for="result-2">Life Points: <br></label>
-                <input type="text" id="result-2" aria-labelledby="calculator" value="8000" disabled>
-                <br/>
-                <div class="buttons">
-                    <button onclick="addToScreen2('7')">7</button>
-                    <button onclick="addToScreen2('8')">8</button>
-                    <button onclick="addToScreen2('9')">9</button>
-                    <button onclick="addToScreen2('4')">4</button>
-                    <button onclick="addToScreen2('5')">5</button>
-                    <button onclick="addToScreen2('6')">6</button> 
-                    <button onclick="addToScreen2('1')">1</button>
-                    <button onclick="addToScreen2('2')">2</button>
-                    <button onclick="addToScreen2('3')">3</button>
-                    <button onclick="addToScreen2('0')">0</button>
-                    <button onclick="addToScreen2('+')" id="plus2">+</button>
-                    <button onclick="addToScreen2('-')" id="minus2">-</button>
-                    <button onclick="calculate2()" id="equals2">=</button>
-                    <button onclick="undo2()" id="undo2">Undo</button>
-                    <button onclick="clearScreen2()" id="reset2">Reset</button>
-                   
-                    <br>
-                    <p id="p-2-count">Wins: 0</p>
-                    <br>
-                </div>  
+               <label for="result">Life Points: <br></label>
+               <input type="text" id="result" value="8000" disabled>
+               <br>
+               <div class="buttons">
+                  <button onclick="addToScreen('7')">7</button>
+                  <button onclick="addToScreen('8')">8</button>
+                  <button onclick="addToScreen('9')">9</button>
+                  <button onclick="addToScreen('4')">4</button>
+                  <button onclick="addToScreen('5')">5</button>
+                  <button onclick="addToScreen('6')">6</button> 
+                  <button onclick="addToScreen('1')">1</button>
+                  <button onclick="addToScreen('2')">2</button>
+                  <button onclick="addToScreen('3')">3</button>
+                  <button onclick="addToScreen('0')">0</button>
+                  <button onclick="addToScreen('+')" id="plus1">+</button>
+                  <button onclick="addToScreen('-')" id="minus1">-</button>
+                  <button onclick="calculate()" id="equals1">=</button>
+                  <button onclick="undo()" id="undo1">Undo</button>
+                  <button onclick="clearScreen()" id="reset1">Reset</button>
+                  <br>
+                  <p id="p-1-count">Wins: 0</p>
+               </div>
             </div>
          </section>
-    </div>
-    <label for="result-screen">Results: <br/></label>
-    <div id="results">
-        
-        <input type="text"  id="result-screen" aria-labelledby="results" value="" onclick="clearResult()" disabled>  
-    </div>
-    <div class="reset-button">
-        <button id="game-reset-button" onclick="resetMatch()">Reset Match Score</button>
-    </div>
-    <label for="timer-screen">Timer: <br/></label>
-    <div id="timer">
-        <input type="text" id="timer-screen" aria-labelledby="timer" value="40:00"  disabled >
-     </div> 
-     <div class="timer">
-        <button id="play" onclick="play()">Play<br><i class="fa-solid fa-play"></i></button> 
-        <button id="pause" onclick="pause()">Pause<i class="fa-solid fa-pause"></i></button> 
-        <button id="restart" onclick="restart()">Reset <i class="fa-solid fa-backward"></i></button> 
-        
-    </div>
-    
-    <div id="container-tools">
-        <button class="tool" onclick="rollTheDice()"><img src="assests/images/dice6.png" width="50px" height="50px" alt="picture of yugioh logo" class="img1"><br> <h7 id="diceTxt">Dice</h7> <br></button>
-        <button class="tool" onclick="flipCoin()"><img src="assests/images/coin1.gif" width="50px" height="50px" alt="picture of yugioh logo" class="img2"><br> <h7 id="coinTxt">Coin</h7> </button>  
-    </div>
-    <footer>
-        <div class="links">
-        <a href="https://github.com/DiarmuidSheeran" aria-label="link to diarmuid sheerans github" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #d1d7e0;"></i> Github</a>
-        <a href="https://yugioh.fandom.com/wiki/Rulebook" aria-label="link to yugioh rulebook wiki page" target="_blank"><i class="fa-solid fa-book fa-xl" style="color: #d1d7e0;"></i>Yugioh Rulebook</a>
-        </div>
-    </footer>
-
-    
-
-    <script src="https://kit.fontawesome.com/c46f318273.js" crossorigin="anonymous"></script>
-    <script src="assests/script.js"></script>
-</body>
+         <section class="player-2">
+            <h2 id="name2">Player 2</h2>
+            <div class="player-name">
+               <label for="player-2"></label>
+               <input type="text" class="player-name" value="" placeholder="Name:" id="player-2" onclick="submitName2()">
+            </div>
+            <div class="calculator">
+               <label for="result-2">Life Points: <br></label>
+               <input type="text" id="result-2" value="8000" disabled>
+               <br>
+               <div class="buttons">
+                  <button onclick="addToScreen2('7')">7</button>
+                  <button onclick="addToScreen2('8')">8</button>
+                  <button onclick="addToScreen2('9')">9</button>
+                  <button onclick="addToScreen2('4')">4</button>
+                  <button onclick="addToScreen2('5')">5</button>
+                  <button onclick="addToScreen2('6')">6</button> 
+                  <button onclick="addToScreen2('1')">1</button>
+                  <button onclick="addToScreen2('2')">2</button>
+                  <button onclick="addToScreen2('3')">3</button>
+                  <button onclick="addToScreen2('0')">0</button>
+                  <button onclick="addToScreen2('+')" id="plus2">+</button>
+                  <button onclick="addToScreen2('-')" id="minus2">-</button>
+                  <button onclick="calculate2()" id="equals2">=</button>
+                  <button onclick="undo2()" id="undo2">Undo</button>
+                  <button onclick="clearScreen2()" id="reset2">Reset</button>
+                  <br>
+                  <p id="p-2-count">Wins: 0</p>
+                  <br>
+               </div>
+            </div>
+         </section>
+      </div>
+      <label for="result-screen">Results: <br></label>
+      <div id="results">
+         <input type="text"  id="result-screen" aria-labelledby="results" value="" onclick="clearResult()" disabled>  
+      </div>
+      <div class="reset-button">
+         <button id="game-reset-button" onclick="resetMatch()">Reset Match Score</button>
+      </div>
+      <label for="timer-screen">Timer: <br></label>
+      <div id="timer">
+         <input type="text" id="timer-screen" aria-labelledby="timer" value="40:00"  disabled >
+      </div>
+      <div class="timer">
+         <button id="play" onclick="play()">Play<br><i class="fa-solid fa-play"></i></button> 
+         <button id="pause" onclick="pause()">Pause<i class="fa-solid fa-pause"></i></button> 
+         <button id="restart" onclick="restart()">Reset <i class="fa-solid fa-backward"></i></button> 
+      </div>
+      <div id="container-tools">
+         <button class="tool" onclick="rollTheDice()"><img src="assests/images/dice6.png" width="50" height="50" alt="picture of yugioh logo" class="img1"><br> Dice<br></button>
+         <button class="tool" onclick="flipCoin()"><img src="assests/images/coin1.gif" width="50" height="50" alt="picture of yugioh logo" class="img2"><br> Coin </button>  
+      </div>
+      <footer>
+         <div class="links">
+            <a href="https://github.com/DiarmuidSheeran" aria-label="link to diarmuid sheerans github" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #d1d7e0;"></i> Github</a>
+            <a href="https://yugioh.fandom.com/wiki/Rulebook" aria-label="link to yugioh rulebook wiki page" target="_blank"><i class="fa-solid fa-book fa-xl" style="color: #d1d7e0;"></i>Yugioh Rulebook</a>
+         </div>
+      </footer>
+      <script src="https://kit.fontawesome.com/c46f318273.js" crossorigin="anonymous"></script>
+      <script src="assests/script.js"></script>
+   </body>
 </html>

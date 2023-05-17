@@ -1,915 +1,890 @@
 /*------------body and head style-------------*/
-
-body { 
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'Anton', sans-serif;
+body {
+	background-color: #000000;
+	color: #ffffff;
+	font-family: 'Anton', sans-serif;
 }
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-
- label {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size: 20px;
- }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+label {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
 /*-------------Style for container-------------------*/
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5px;
 }
 /*------------Style for Player Names------------------*/
 .player-1 {
-    padding-right: 5px;
+	padding-right: 5px;
 }
 #name1 {
-    display: flex;
-    background-color: #ef492f;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    font-size: 30px;
-    letter-spacing: 2px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #717E8E;
-    border-radius: 10px; 
+	display: flex;
+	background-color: #ef492f;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 2px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #717E8E;
+	border-radius: 10px;
 }
-
 .player-2 {
-    padding-left: 5px;
+	padding-left: 5px;
 }
 #name2 {
-    display: flex;
-    background-color: #ef492f;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    font-size: 30px;
-    letter-spacing: 2px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #717E8E;
-    border-radius: 10px; 
+	display: flex;
+	background-color: #ef492f;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 2px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #717E8E;
+	border-radius: 10px;
 }
 .player-name {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 .player-name input[type="text"] {
-    margin-top: 5px;
-    padding: 5px;
-    border-color: #ef492f;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    font-size: 20px;
-    margin-bottom: 5px;
-    width: 245px;
-    background-color: #000000;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: monospace;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+	margin-top: 5px;
+	padding: 5px;
+	border-color: #ef492f;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	font-size: 20px;
+	margin-bottom: 5px;
+	width: 245px;
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: monospace;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
 /*----------Calculator Style----------------*/
 .calculator {
-    background-color: #ef492f;
-    padding: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #717E8E;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+	background-color: #ef492f;
+	padding: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #717E8E;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .calculator input[type="text"] {
-    background-color: #000000;
-    text-align: center;
-    color: #ffffff;
-    font-size: 40px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #717E8E;
-    border-radius: 10px;
-    width: 220px;
-    font-family: 'Anton', sans-serif;
+	background-color: #000000;
+	text-align: center;
+	color: #ffffff;
+	font-size: 40px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #717E8E;
+	border-radius: 10px;
+	width: 220px;
+	font-family: 'Anton', sans-serif;
 }
 .buttons {
-    width: 220px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	width: 220px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 button {
-    background-color: #000000;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #717E8E;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    width: 57px;
-    height: 57px;
-    margin: 8px;
+	background-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #717E8E;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+	width: 57px;
+	height: 57px;
+	margin: 8px;
 }
 button:hover {
-    background-color: rgb(111, 110, 110);
+	background-color: rgb(111, 110, 110);
 }
 button:active {
-    background-color: rgb(232, 232, 232)
+	background-color: rgb(232, 232, 232)
 }
 #equals1 {
-    background-color: #ffffff;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #000000;
-    
+	background-color: #ffffff;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000000;
 }
 #equals1:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #reset1 {
-    background-color: #ffffff;
-    font-size: 15px;
-    text-align: center;
-    font-weight: bolder;
-    color: #000000;
+	background-color: #ffffff;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+	color: #000000;
 }
 #reset1:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #undo1 {
-    background-color: #ffffff;
-    font-size: 15px;
-    text-align: center;
-    font-weight: bolder;
-    color: #000000;
+	background-color: #ffffff;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+	color: #000000;
 }
 #undo1:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #plus1 {
-    background-color: #ffffff;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #000000;
-    
+	background-color: #ffffff;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000000;
 }
 #plus1:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #minus1 {
-    background-color: #ffffff;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #000000;
+	background-color: #ffffff;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000000;
 }
 #minus1:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #equals2 {
-    background-color: #ffffff;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #000000;
+	background-color: #ffffff;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000000;
 }
 #equals2:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #reset2 {
-    background-color: #ffffff;
-    font-size: 15px;
-    text-align: center;
-    font-weight: bolder;
-    color: #000000;
+	background-color: #ffffff;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+	color: #000000;
 }
 #reset2:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #undo2 {
-    background-color: #ffffff;
-    font-size: 15px;
-    text-align: center;
-    font-weight: bolder;
-    color: #000000;
+	background-color: #ffffff;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bolder;
+	color: #000000;
 }
 #undo2:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #plus2 {
-    background-color: #ffffff;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #000000;
-    
+	background-color: #ffffff;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000000;
 }
 #plus2:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #minus2 {
-    background-color: #ffffff;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #000000;
+	background-color: #ffffff;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #000000;
 }
 #minus2:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 #p-1-count {
-    border-width: 2px;
-    border-style: solid;
-    border-color: #717E8E;
-    border-radius: 10px;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 5px;
-    background-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #717E8E;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 5px;
+	background-color: #000000;
 }
 #p-2-count {
-    border-width: 2px;
-    border-style: solid;
-    border-color: #717E8E;
-    border-radius: 10px;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 5px;
-    background-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #717E8E;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 5px;
+	background-color: #000000;
 }
 /*------------results section---------------*/
 #results {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 #results input[type="text"] {
-    margin-top: -5px; 
-    padding: 10px;
-    border-color: #ef492f;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 10px;
-    font-size: 20px;
-    width: 480px;
-    height: 50px;
-    margin-bottom: 5px;
-    background-color: #000000;
-    text-align: center;
-    color: #ffffff;
+	margin-top: -5px;
+	padding: 10px;
+	border-color: #ef492f;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 10px;
+	font-size: 20px;
+	width: 480px;
+	height: 50px;
+	margin-bottom: 5px;
+	background-color: #000000;
+	text-align: center;
+	color: #ffffff;
 }
 /*------------Reset Button Section-----------*/
 .reset-button {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 #game-reset-button{
-    width: 240px;
-    font-size: 20px;
-    border-width: 2px;
-    border-color: #717E8E;
-    color: #000000;
-    background-color: #ef492f;
-    font-weight: bold;
+	width: 240px;
+	font-size: 20px;
+	border-width: 2px;
+	border-color: #717E8E;
+	color: #000000;
+	background-color: #ef492f;
+	font-weight: bold;
 }
 #game-reset-button:hover{
-    background-color: #717E8E;
+	background-color: #717E8E;
 }
 /*---------timer section------------*/
-
 #timer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
-
 #timer input[type="text"] {
-    padding: 5px;
-    border-color: #717E8E;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 25px;
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 5px;
-    background-color: #ef492f;
-    font-weight: bolder;
-    color: #000000;
+	padding: 5px;
+	border-color: #717E8E;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	margin-bottom: 5px;
+	background-color: #ef492f;
+	font-weight: bolder;
+	color: #000000;
 }
 .timer{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
-
 .timer button{
-    margin-left: 20px;
-    margin-right: 25px;
-    margin-bottom: 5px;
+	margin-left: 20px;
+	margin-right: 25px;
+	margin-bottom: 5px;
 }
-#play {  
-    background-color: #ef492f;
-    font-size: 15px;
-    text-align: center;
-    color: #000000;
+#play {
+	background-color: #ef492f;
+	font-size: 15px;
+	text-align: center;
+	color: #000000;
 }
 #play:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
-#pause {  
-    background-color: #ef492f;
-    font-size: 15px;
-    text-align: center;
-    color: #000000;
+#pause {
+	background-color: #ef492f;
+	font-size: 15px;
+	text-align: center;
+	color: #000000;
 }
 #pause:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
-#restart {   
-    background-color: #ef492f;
-    font-size: 15px;
-    text-align: center;
-    color: #000000;
+#restart {
+	background-color: #ef492f;
+	font-size: 15px;
+	text-align: center;
+	color: #000000;
 }
 #restart:hover {
-    background-color: rgb(111, 110, 110);
-    color: #ffffff;
+	background-color: rgb(111, 110, 110);
+	color: #ffffff;
 }
 /*-------Dice and Coin Section-------------*/
 #container-tools {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .tool {
-    border-color: #717E8E;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 100px;
-    font-size: 40px;
-    width: 200px;
-    height: 200px;
-    padding: 0px;
-    justify-content: center;
-    background-color: #ef492f;
-    color: #000000;
-    font-weight: bolder;
+	border-color: #717E8E;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 100px;
+	font-size: 40px;
+	width: 200px;
+	height: 200px;
+	padding: 0px;
+	justify-content: center;
+	background-color: #ef492f;
+	color: #000000;
+	font-weight: bolder;
 }
 footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center; 
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
 }
 .links {
-    margin-top: 5px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #717E8E;
-    border-radius: 10px;
-    width: 520px;
-    height: 40px;
-    background-color: #ef492f;
+	margin-top: 5px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #717E8E;
+	border-radius: 10px;
+	width: 520px;
+	height: 40px;
+	background-color: #ef492f;
 }
 .links a i {
-    padding-top: 20px;
-    padding-right: 10px;
-    text-decoration: none;
+	padding-top: 20px;
+	padding-right: 10px;
+	text-decoration: none;
 }
 a {
-    text-decoration: none;
-    color: #000000;
-    padding-left: 20px;
+	text-decoration: none;
+	color: #000000;
+	padding-left: 20px;
 }
-
 /*-------media query for tablet---------*/
 @media (max-width: 900px) {
-    button {
-      font-size: 30px;
-    }
-    .player-name input[type="text"] {
-        width: 180px;
-    }
-    
+	button {
+		font-size: 30px;
+	}
+	.player-name input[type="text"] {
+		width: 180px;
+	}
 }
 /*------media query for size 600 to 899--------*/
 @media (min-width: 600px) and (max-width: 899px) {
-    .logo img {
-        width: 500px;
-        height: 150px;
-    }
-    button {
-        font-size: 20px;
-    }
-    .player-name input[type="text"] {
-        width: 220px;
-    }
-    #name1{
-        font-size: 20px;
-    }
-    #name2{
-        font-size: 20px;
-    }
-    #results input[type="text"] {
-        margin-top: 5px;
-        font-size: 22px;
-        width: 480px;
-        height: auto;
-    }
-    
+	.logo img {
+		width: 500px;
+		height: 150px;
+	}
+	button {
+		font-size: 20px;
+	}
+	.player-name input[type="text"] {
+		width: 220px;
+	}
+	#name1{
+		font-size: 20px;
+	}
+	#name2{
+		font-size: 20px;
+	}
+	#results input[type="text"] {
+		margin-top: 5px;
+		font-size: 22px;
+		width: 480px;
+		height: auto;
+	}
 }
 @media (min-width: 501px) and (max-width: 600px) {
-    .logo img {
-        width: 300px;
-        height: 100px;
-        margin-left: 10px;
-        margin-bottom: 5px;
-    }
-    input[type="text"] {
-        width: 140px;
-        margin: 5px;
-        font-size: 15px; 
-    } 
-    .buttons {
-        width: 195px;
-        
-    }
-    button {
-        font-size: 20px;
-        width: 40px;
-        height: 40px;
-    }
-    .calculator {
-        padding: 5px;  
-    }
-    .calculator input[type="text"] {
-        font-size: 20px;
-        width: 180px;
-    }
-    .player-name input[type="text"] {
-        width: 180px;
-        font-size: 15px;
-    }
-    #undo1 {
-        font-size: 10px;
-  
-    }
-    #reset1 {
-        font-size: 9px;
-   
-    }
-    #plus1 {
-        font-size: 20px;
-    }
-    #minus1 {
-        font-size: 20px;
-    }
-    #equals1 {
-        font-size: 20px;
-    }
-    #undo2 {
-        font-size: 10px;
-    }
-    #reset2 {
-        font-size: 9px;
-    }
-    #plus2 {
-        font-size: 20px;
-    }
-    #minus2 {
-        font-size: 20px;
-    }
-    #equals2 {
-        font-size: 20px;
-     
-    }
-    
-    #results input[type="text"] {
-        margin-top: 5px;
-        font-size: 12px;
-        width: 400px;
-        height: auto;
-    }
-    #game-reset-button{
-        width: 160px;
-        font-size: 15px;
-    }
-  
-    .timer button{
-        margin-left: 20px;
-        margin-right: 25px;
-        margin-bottom: 5px;
-        width: 50px;
-        height: 50px;
-    }
-    #play {  
-        font-size: 12px;
-    }
-    #pause {  
-        font-size: 12px;
-    }
-    #restart {   
-        font-size: 12px;
-    }
-    .tool {
-        border-color: #717E8E;
-        border-width: 2px;
-        border-style: solid;
-        border-radius: 60px;
-        font-size: 30px;
-        width: 120px;
-        height: 120px;
-    }
-    #p-1-count {
-        font-size: 15px;
-    }
-    #p-2-count { 
-        font-size: 15px;
-    }
-    #name1 {
-        font-size: 15px;
-    }
-    #name2 {
-        font-size: 15px;
-    }
+	.logo img {
+		width: 300px;
+		height: 100px;
+		margin-left: 10px;
+		margin-bottom: 5px;
+	}
+	input[type="text"] {
+		width: 140px;
+		margin: 5px;
+		font-size: 15px;
+	}
+	.buttons {
+		width: 195px;
+	}
+	button {
+		font-size: 20px;
+		width: 40px;
+		height: 40px;
+	}
+	.calculator {
+		padding: 5px;
+	}
+	.calculator input[type="text"] {
+		font-size: 20px;
+		width: 180px;
+	}
+	.player-name input[type="text"] {
+		width: 180px;
+		font-size: 15px;
+	}
+	#undo1 {
+		font-size: 10px;
+	}
+	#reset1 {
+		font-size: 9px;
+	}
+	#plus1 {
+		font-size: 20px;
+	}
+	#minus1 {
+		font-size: 20px;
+	}
+	#equals1 {
+		font-size: 20px;
+	}
+	#undo2 {
+		font-size: 10px;
+	}
+	#reset2 {
+		font-size: 9px;
+	}
+	#plus2 {
+		font-size: 20px;
+	}
+	#minus2 {
+		font-size: 20px;
+	}
+	#equals2 {
+		font-size: 20px;
+	}
+	#results input[type="text"] {
+		margin-top: 5px;
+		font-size: 12px;
+		width: 400px;
+		height: auto;
+	}
+	#game-reset-button{
+		width: 160px;
+		font-size: 15px;
+	}
+	.timer button{
+		margin-left: 20px;
+		margin-right: 25px;
+		margin-bottom: 5px;
+		width: 50px;
+		height: 50px;
+	}
+	#play {
+		font-size: 12px;
+	}
+	#pause {
+		font-size: 12px;
+	}
+	#restart {
+		font-size: 12px;
+	}
+	.tool {
+		border-color: #717E8E;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 60px;
+		font-size: 30px;
+		width: 120px;
+		height: 120px;
+	}
+	#p-1-count {
+		font-size: 15px;
+	}
+	#p-2-count {
+		font-size: 15px;
+	}
+	#name1 {
+		font-size: 15px;
+	}
+	#name2 {
+		font-size: 15px;
+	}
 }
 @media (min-width: 451px) and (max-width: 500px) {
-    .logo img {
-        width: 300px;
-        height: 100px;
-        margin-left: 10px;
-        margin-bottom: 5px;
-    }
-    input[type="text"] {
-        width: 140px;
-        margin: 5px;
-        font-size: 15px; 
-    } 
-    .buttons {
-        width: 165px;
-        
-    }
-    button {
-        font-size: 20px;
-        width: 35px;
-        height: 35px;
-    }
-    .calculator {
-        padding: 5px;  
-    }
-    .calculator input[type="text"] {
-        font-size: 20px;
-        width: 150px;
-    }
-    .player-name input[type="text"] {
-        width: 150px;
-        font-size: 15px;
-    }
-    #undo1 {
-        font-size: 13px;
-        width: 54px;  
-    }
-    #reset1 {
-        font-size: 13px;
-        width: 54px;
-    }
-    #plus1 {
-        font-size: 20px;
-    }
-    #minus1 {
-        font-size: 20px;
-    }
-    #equals1 {
-        font-size: 20px;
-        width: 90px;
-    }
-    #undo2 {
-        font-size: 13px;
-        width: 54px;  
-    }
-    #reset2 {
-        font-size: 13px;
-        width: 54px;
-    }
-    #plus2 {
-        font-size: 20px;
-    }
-    #minus2 {
-        font-size: 20px;
-    }
-    #equals2 {
-        font-size: 20px;
-        width: 90px;
-    }
-    
-    #results input[type="text"] {
-        margin-top: 5px; /* Adjust the margin value as per your preference */
-        font-size: 12px;
-        width: 340px;
-        height: auto;
-    }
-    #game-reset-button{
-        width: 160px;
-        font-size: 15px;
-    }
-  
-    .timer button{
-        margin-left: 20px;
-        margin-right: 25px;
-        margin-bottom: 5px;
-        width: 50px;
-        height: 50px;
-    }
-    #play {  
-        font-size: 12px;
-    }
-    #pause {  
-        font-size: 12px;
-    }
-    #restart {   
-        font-size: 12px;
-    }
-    .tool {
-        border-color: #717E8E;
-        border-width: 2px;
-        border-style: solid;
-        border-radius: 60px;
-        font-size: 30px;
-        width: 120px;
-        height: 120px;
-    }
-    #p-1-count {
-        font-size: 15px;
-    }
-    #p-2-count { 
-        font-size: 15px;
-    }
-    #name1 {
-        font-size: 15px;
-    }
-    #name2 {
-        font-size: 15px;
-    }
+	.logo img {
+		width: 300px;
+		height: 100px;
+		margin-left: 10px;
+		margin-bottom: 5px;
+	}
+	input[type="text"] {
+		width: 140px;
+		margin: 5px;
+		font-size: 15px;
+	}
+	.buttons {
+		width: 165px;
+	}
+	button {
+		font-size: 20px;
+		width: 35px;
+		height: 35px;
+	}
+	.calculator {
+		padding: 5px;
+	}
+	.calculator input[type="text"] {
+		font-size: 20px;
+		width: 150px;
+	}
+	.player-name input[type="text"] {
+		width: 150px;
+		font-size: 15px;
+	}
+	#undo1 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#reset1 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#plus1 {
+		font-size: 20px;
+	}
+	#minus1 {
+		font-size: 20px;
+	}
+	#equals1 {
+		font-size: 20px;
+		width: 90px;
+	}
+	#undo2 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#reset2 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#plus2 {
+		font-size: 20px;
+	}
+	#minus2 {
+		font-size: 20px;
+	}
+	#equals2 {
+		font-size: 20px;
+		width: 90px;
+	}
+	#results input[type="text"] {
+		margin-top: 5px;
+		/* Adjust the margin value as per your preference */
+		font-size: 12px;
+		width: 340px;
+		height: auto;
+	}
+	#game-reset-button{
+		width: 160px;
+		font-size: 15px;
+	}
+	.timer button{
+		margin-left: 20px;
+		margin-right: 25px;
+		margin-bottom: 5px;
+		width: 50px;
+		height: 50px;
+	}
+	#play {
+		font-size: 12px;
+	}
+	#pause {
+		font-size: 12px;
+	}
+	#restart {
+		font-size: 12px;
+	}
+	.tool {
+		border-color: #717E8E;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 60px;
+		font-size: 30px;
+		width: 120px;
+		height: 120px;
+	}
+	#p-1-count {
+		font-size: 15px;
+	}
+	#p-2-count {
+		font-size: 15px;
+	}
+	#name1 {
+		font-size: 15px;
+	}
+	#name2 {
+		font-size: 15px;
+	}
 }
 @media (min-width: 400px) and (max-width: 450px) {
-    .logo img {
-        width: 300px;
-        height: 100px;
-        margin-left: 10px;
-        margin-bottom: 5px;
-    }
-    input[type="text"] {
-        width: 140px;
-        margin: 5px;
-        font-size: 15px; 
-    } 
-    .buttons {
-        width: 160px;
-        
-    }
-    button {
-        font-size: 20px;
-        width: 30px;
-        height: 30px;
-    }
-    .calculator {
-        padding: 5px;  
-    }
-    .calculator input[type="text"] {
-        font-size: 20px;
-        width: 140px;
-    }
-    .player-name input[type="text"] {
-        width: 140px;
-        font-size: 12px;
-    }
-    #undo1 {
-        font-size: 13px;
-        width: 54px;  
-    }
-    #reset1 {
-        font-size: 13px;
-        width: 54px;
-    }
-    #plus1 {
-        font-size: 20px;
-    }
-    #minus1 {
-        font-size: 20px;
-    }
-    #equals1 {
-        font-size: 20px;
-        width: 90px;
-    }
-    #undo2 {
-        font-size: 13px;
-        width: 54px;  
-    }
-    #reset2 {
-        font-size: 13px;
-        width: 54px;
-    }
-    #plus2 {
-        font-size: 20px;
-    }
-    #minus2 {
-        font-size: 20px;
-    }
-    #equals2 {
-        font-size: 20px;
-        width: 90px;
-    }
-    
-    #results input[type="text"] {
-        margin-top: 5px; /* Adjust the margin value as per your preference */
-        font-size: 12px;
-        width: 330px;
-        height: auto;
-    }
-    #game-reset-button{
-        width: 160px;
-        font-size: 15px;
-    }
-  
-    .timer button{
-        margin-left: 20px;
-        margin-right: 25px;
-        margin-bottom: 5px;
-        width: 50px;
-        height: 50px;
-    }
-    #play {  
-        font-size: 12px;
-    }
-    #pause {  
-        font-size: 12px;
-    }
-    #restart {   
-        font-size: 12px;
-    }
-    .tool {
-        border-color: #717E8E;
-        border-width: 2px;
-        border-style: solid;
-        border-radius: 60px;
-        font-size: 30px;
-        width: 120px;
-        height: 120px;
-    }
-    #p-1-count {
-        font-size: 15px;
-    }
-    #p-2-count { 
-        font-size: 15px;
-    }
-    #name1 {
-        font-size: 15px;
-    }
-    #name2 {
-        font-size: 15px;
-    }
+	.logo img {
+		width: 300px;
+		height: 100px;
+		margin-left: 10px;
+		margin-bottom: 5px;
+	}
+	input[type="text"] {
+		width: 140px;
+		margin: 5px;
+		font-size: 15px;
+	}
+	.buttons {
+		width: 160px;
+	}
+	button {
+		font-size: 20px;
+		width: 30px;
+		height: 30px;
+	}
+	.calculator {
+		padding: 5px;
+	}
+	.calculator input[type="text"] {
+		font-size: 20px;
+		width: 140px;
+	}
+	.player-name input[type="text"] {
+		width: 140px;
+		font-size: 12px;
+	}
+	#undo1 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#reset1 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#plus1 {
+		font-size: 20px;
+	}
+	#minus1 {
+		font-size: 20px;
+	}
+	#equals1 {
+		font-size: 20px;
+		width: 90px;
+	}
+	#undo2 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#reset2 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#plus2 {
+		font-size: 20px;
+	}
+	#minus2 {
+		font-size: 20px;
+	}
+	#equals2 {
+		font-size: 20px;
+		width: 90px;
+	}
+	#results input[type="text"] {
+		margin-top: 5px;
+		/* Adjust the margin value as per your preference */
+		font-size: 12px;
+		width: 330px;
+		height: auto;
+	}
+	#game-reset-button{
+		width: 160px;
+		font-size: 15px;
+	}
+	.timer button{
+		margin-left: 20px;
+		margin-right: 25px;
+		margin-bottom: 5px;
+		width: 50px;
+		height: 50px;
+	}
+	#play {
+		font-size: 12px;
+	}
+	#pause {
+		font-size: 12px;
+	}
+	#restart {
+		font-size: 12px;
+	}
+	.tool {
+		border-color: #717E8E;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 60px;
+		font-size: 30px;
+		width: 120px;
+		height: 120px;
+	}
+	#p-1-count {
+		font-size: 15px;
+	}
+	#p-2-count {
+		font-size: 15px;
+	}
+	#name1 {
+		font-size: 15px;
+	}
+	#name2 {
+		font-size: 15px;
+	}
 }
 @media (min-width: 300px) and (max-width: 399px) {
-    .logo img {
-        width: 300px;
-        height: 100px;
-        margin-left: 10px;
-        margin-bottom: 5px;
-    }
-    input[type="text"] {
-        width: 10px;
-        margin: 5px;
-        font-size: 15px; 
-    } 
-    .buttons {
-        width: 140px;
-        
-    }
-    button {
-        font-size: 20px;
-        width: 30px;
-        height: 30px;
-    }
-    .calculator {
-        padding: 0px;  
-    }
-    .calculator input[type="text"] {
-        font-size: 20px;
-        width: 120px;
-    }
-    .player-name input[type="text"] {
-        width: 120px;
-        font-size: 12px;
-    }
-    #undo1 {
-        font-size: 13px;
-        width: 54px;  
-    }
-    #reset1 {
-        font-size: 13px;
-        width: 54px;
-    }
-    #plus1 {
-        font-size: 20px;
-    }
-    #minus1 {
-        font-size: 20px;
-    }
-    #equals1 {
-        font-size: 20px;
-        width: 90px;
-    }
-    #undo2 {
-        font-size: 13px;
-        width: 54px;  
-    }
-    #reset2 {
-        font-size: 13px;
-        width: 54px;
-    }
-    #plus2 {
-        font-size: 20px;
-    }
-    #minus2 {
-        font-size: 20px;
-    }
-    #equals2 {
-        font-size: 20px;
-        width: 90px;
-    }
-    
-    #results input[type="text"] {
-        margin-top: 5px; 
-        font-size: 12px;
-        width: 280px;
-        height: auto;
-    }
-    #game-reset-button{
-        width: 160px;
-        font-size: 15px;
-    }
-  
-    .timer button{
-        margin-left: 20px;
-        margin-right: 25px;
-        margin-bottom: 5px;
-        width: 50px;
-        height: 50px;
-    }
-    #play {  
-        font-size: 12px;
-    }
-    #pause {  
-        font-size: 12px;
-    }
-    #restart {   
-        font-size: 12px;
-    }
-    .tool {
-        border-color: #717E8E;
-        border-width: 2px;
-        border-style: solid;
-        border-radius: 60px;
-        font-size: 30px;
-        width: 120px;
-        height: 120px;
-    }
-    #p-1-count {
-        font-size: 15px;
-    }
-    #p-2-count { 
-        font-size: 15px;
-    }
-    #name1 {
-        font-size: 10px;
-    }
-    #name2 {
-        font-size: 10px;
-    }
+	.logo img {
+		width: 300px;
+		height: 100px;
+		margin-left: 10px;
+		margin-bottom: 5px;
+	}
+	input[type="text"] {
+		width: 10px;
+		margin: 5px;
+		font-size: 15px;
+	}
+	.buttons {
+		width: 140px;
+	}
+	button {
+		font-size: 20px;
+		width: 30px;
+		height: 30px;
+	}
+	.calculator {
+		padding: 0px;
+	}
+	.calculator input[type="text"] {
+		font-size: 20px;
+		width: 120px;
+	}
+	.player-name input[type="text"] {
+		width: 120px;
+		font-size: 12px;
+	}
+	#undo1 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#reset1 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#plus1 {
+		font-size: 20px;
+	}
+	#minus1 {
+		font-size: 20px;
+	}
+	#equals1 {
+		font-size: 20px;
+		width: 90px;
+	}
+	#undo2 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#reset2 {
+		font-size: 13px;
+		width: 54px;
+	}
+	#plus2 {
+		font-size: 20px;
+	}
+	#minus2 {
+		font-size: 20px;
+	}
+	#equals2 {
+		font-size: 20px;
+		width: 90px;
+	}
+	#results input[type="text"] {
+		margin-top: 5px;
+		font-size: 12px;
+		width: 280px;
+		height: auto;
+	}
+	#game-reset-button{
+		width: 160px;
+		font-size: 15px;
+	}
+	.timer button{
+		margin-left: 20px;
+		margin-right: 25px;
+		margin-bottom: 5px;
+		width: 50px;
+		height: 50px;
+	}
+	#play {
+		font-size: 12px;
+	}
+	#pause {
+		font-size: 12px;
+	}
+	#restart {
+		font-size: 12px;
+	}
+	.tool {
+		border-color: #717E8E;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 60px;
+		font-size: 30px;
+		width: 120px;
+		height: 120px;
+	}
+	#p-1-count {
+		font-size: 15px;
+	}
+	#p-2-count {
+		font-size: 15px;
+	}
+	#name1 {
+		font-size: 10px;
+	}
+	#name2 {
+		font-size: 10px;
+	}
 }

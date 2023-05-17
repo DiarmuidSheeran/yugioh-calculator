@@ -1,7 +1,5 @@
 /*------------body and head style-------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
 body { 
     background-color: #000000;
     color: #ffffff;
@@ -72,7 +70,7 @@ body {
 }
 .player-name input[type="text"] {
     margin-top: 5px;
-    padding: -5px;
+    padding: 5px;
     border-color: #ef492f;
     border-width: 2px;
     border-style: solid;
@@ -137,7 +135,7 @@ button:active {
 #equals1 {
     background-color: #ffffff;
     font-size: 40px;
-    font-weight: 20px;
+    font-weight: bolder;
     color: #000000;
     
 }
@@ -170,7 +168,7 @@ button:active {
 #plus1 {
     background-color: #ffffff;
     font-size: 40px;
-    font-weight: 20px;
+    font-weight: bolder;
     color: #000000;
     
 }
@@ -181,7 +179,7 @@ button:active {
 #minus1 {
     background-color: #ffffff;
     font-size: 40px;
-    font-weight: 20px;
+    font-weight: bolder;
     color: #000000;
 }
 #minus1:hover {
@@ -191,7 +189,7 @@ button:active {
 #equals2 {
     background-color: #ffffff;
     font-size: 40px;
-    font-weight: 20px;
+    font-weight: bolder;
     color: #000000;
 }
 #equals2:hover {
@@ -223,7 +221,7 @@ button:active {
 #plus2 {
     background-color: #ffffff;
     font-size: 40px;
-    font-weight: 20px;
+    font-weight: bolder;
     color: #000000;
     
 }
@@ -234,7 +232,7 @@ button:active {
 #minus2 {
     background-color: #ffffff;
     font-size: 40px;
-    font-weight: 20px;
+    font-weight: bolder;
     color: #000000;
 }
 #minus2:hover {
@@ -310,7 +308,7 @@ button:active {
 
 #timer input[type="text"] {
     padding: 5px;
-    border-color: #ef492f;
+    border-color: #717E8E;
     border-width: 2px;
     border-style: solid;
     border-radius: 25px;
@@ -318,9 +316,9 @@ button:active {
     width: 50px;
     height: 50px;
     margin-bottom: 5px;
-    background-color: #000000;
+    background-color: #ef492f;
     font-weight: bolder;
-    color: #ffffff;
+    color: #000000;
 }
 .timer{
     display: flex;
@@ -393,7 +391,7 @@ footer {
     margin-top: 5px;
     border-width: 2px;
     border-style: solid;
-    border-color: #ef492f;
+    border-color: #717E8E;
     border-radius: 10px;
     width: 520px;
     height: 40px;

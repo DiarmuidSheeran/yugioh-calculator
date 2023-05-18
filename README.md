@@ -43,7 +43,7 @@ The website also has other features for the users such as a timer to keep track 
   ## Features
 
 ### Logo
-The YuGiOh logo is positioned at the top center of the page and gives clarity to the user on what game this tool is used for.
+* The YuGiOh logo is positioned at the top center of the page and gives clarity to the user on what game this tool is used for.
 ![picture of Website logo](documentation/logo.jpg)
 
 ### Username
@@ -86,5 +86,18 @@ The YuGiOh logo is positioned at the top center of the page and gives clarity to
 ![picture of result for loss of life points](documentation/result-life-points.jpg)
 ![picture of result for coin flip](documentation/result-coin.jpg)
 ![picture of result for dice roll](documentation/result-dice.jpg)
+
+### Reset Match Score
+* Clicking the "Reset Match Score" button resets the wins count for both players back to 0. 
+![picture of reset match score button](documentation/reset-match-score.jpg)
+
+### Timer
+* The timer section displays a countdown timer on an input field with an initial value of 40:00 (40 minutes). 
+* The "Play" button starts the timer, the "Pause" button pauses it, and the "Reset" button resets it back to the default value of 40 minutes.
+![picture of timer and timer buttons](documentation/timer.jpg)
+
+
+
+
 
 

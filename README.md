@@ -1,2 +1,10 @@
-# yugioh-calculator
-This app is a calculator with built in tools to keep track of users life points and offer support in the way time tracking, coin flips and dice rolls.
+# Yugioh Calculator
+This website is a tool inteded for users playing the YuGiOh trading card game.
+
+The game is a two player game and each player statrs on 8000 life points and can use the calculator within the website to keep track of their life points
+
+Each player attacks with different monster cards until one player reaches 0 life points. At this point the life points will return to 8000 for each user indicating the end of a round or game.
+
+Each game in YuGiOh is best of 3 and the wins section of the calculator keeps track of each win and once a player reaches 2 wins the score resets for both players.
+
+The website also has other features for the users such as a timer to keep track of round times (40 minutes) and a dice and coin tool so users dont need any of these items pysically as they can use them within the app as needed.

@@ -286,9 +286,9 @@ function formatTime(seconds) {
    //minutes and seconds are conveted to string, padstart method ensures the minimum length of two by adding a 0 where needed
    return minutes.toString().padStart(2, '0') + ':' + secondsRemaining.toString().padStart(2, '0');
 }
-//updates the screen with formaTimer
+//updates the screen with formaTimer function taking in timeRemaning decreasing time by 1
 function updateTimer() {
-   const timerScreen = document.getElementById("timer-screen");
+   let timerScreen = document.getElementById("timer-screen");
    timerScreen.value = formatTime(timeRemaining);
 }
 //timer is decreased by one second, if time reaches 0 timer is stopped and a message is posted to result screen

@@ -96,6 +96,17 @@ The website also has other features for the users such as a timer to keep track 
 * The "Play" button starts the timer, the "Pause" button pauses it, and the "Reset" button resets it back to the default value of 40 minutes.
 ![picture of timer and timer buttons](documentation/timer.jpg)
 
+### Dice and Coin
+* The Dice and coin tool when clicked will display a gif of a dice rolling  or a flipping coin. 
+* After a set time of 2 seconds each tool will stop and display a random image of either the dice number rolled or side of coin.
+* The random image that is displayed sets the reults and the result is displayed on the result screen.
+![picture of dice and coin buttons](documentation/dice-coin.jpg)
+
+### Navigation
+* The website uses a navigation in the footer to link the user to my github and the yugioh wiki rulebook for additional reasources. 
+![picture of navigation menu in footer](documentation/navigation.jpg)
+
+
 
 
 

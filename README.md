@@ -39,3 +39,14 @@ The website also has other features for the users such as a timer to keep track 
 * [Credits](#Credits)
   * [Content](#Content)
   * [Media](#Media)
+
+  ## Features
+
+### Logo
+The YuGiOh logo is positioned at the top center of the page and gives clarity to the user on what game this tool is used for.
+![picture of Website logo](documentation/logo.jpg)
+
+
+
+
+

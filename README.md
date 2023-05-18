@@ -106,7 +106,20 @@ The website also has other features for the users such as a timer to keep track 
 * The website uses a navigation in the footer to link the user to my github and the yugioh wiki rulebook for additional reasources. 
 ![picture of navigation menu in footer](documentation/navigation.jpg)
 
+## Wireframes
 
+## Testing
+
+* I tested the website worked on different web browsers such as Chrome, Edge and Firefox.
+* I tested and confiremd the responsive nature of the site on different devices such a mobile device, a tablet and a desktop computer.
+* I confirmed that the navigation in the footer directed the user to the correct destination.
+* I have tested the mathematical capabilitites of the calculators to make sure they add and subtract correctly.
+* I have tested the timer to make sure it plays, pauses and restarts.
+* I have tested that the dice roll and the coin flip both give accurate results when used.
+* I have tested that the name input fields correctly take in the user data and store it for use in the results screen.
+* I have tested that the score counter goes up by one when one players points go to 0 and reset when a player has won twice.
+* I have tested the reset button on the calculator to make sure that it reset the life points to there initial values.
+* I have tested the reset match button so that the match score are reset back to 0 for both players.
 
 
 

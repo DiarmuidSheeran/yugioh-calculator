@@ -121,6 +121,23 @@ The website also has other features for the users such as a timer to keep track 
 * I have tested the reset button on the calculator to make sure that it reset the life points to there initial values.
 * I have tested the reset match button so that the match score are reset back to 0 for both players.
 
+## Bugs
+
+### Solved Bugs
+
+#### Problem:
+* While validating my code I was getting a warning for using the eval method in my code for calculations due to security flaws this method brings.
+#### Solution:
+* I had to go a longer way around my screen doing the calculation without the eval method. I split my string up by the operand the user had entered and with that i could change the two differnet strings either side of the operand to ints, make the calculation with the two ints and convert them back to the string as the result.
+
+#### Problem:
+* When a user entered there name into the inout field i couldnt use there name for the results screen. 
+#### Solution:
+* By allowing the users name to be stored on the console I could recall the user name when needed within different functions.
+
+### Unsolved Bugs
+* When a player enters both a plus and minus together and hits the = button an error for Not a Number (NAN) comes onto there screen. 
+* When a player tries to make 2 calculations in one go using a plus and a minus it will always do the minus calculation. It should give an error message and do the call the undo function.
 
 
 

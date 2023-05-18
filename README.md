@@ -56,4 +56,16 @@ The YuGiOh logo is positioned at the top center of the page and gives clarity to
 ![picture of player filled name input fields](documentation/name-filled.jpg)
 ![picture of results field using name](documentation/name-results.jpg)
 
+### Calculator
 
+* Each player has a separate calculator section with buttons for entering numbers and performing calculations.
+* A disabled input field is used to display the users current life points.
+* An initial value of 8000 is displayed on the screen.
+* The buttons labeled with numbers allow the user to add the corresponding number to the life point screen.
+* The buttons labeled with "+" and "-" allow the user to add a operand to the life point screen.
+* The button labeled with "=" allow the user  to add or subtract the current value of the input field from the total.
+* The "Undo" button deletes the last value on the screen to remove typos.
+* The "Reset" button sets the life point total back to the starting value of 8000.
+* When hovered over these buttons change there properties for a more user friendly UI design
+![picture of calculators](documentation/calculator.jpg)
+![picture of calculator with calculation](documentation/calculation.jpg)

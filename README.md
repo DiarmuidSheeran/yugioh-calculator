@@ -1,4 +1,4 @@
-# Yugioh Calculator
+# Yugioh Dueling Calculator
 This website is a tool inteded for users playing the YuGiOh trading card game.
 
 The game is a two player game and each player statrs on 8000 life points and can use the calculator within the website to keep track of their life points
@@ -8,3 +8,4 @@ Each player attacks with different monster cards until one player reaches 0 life
 Each game in YuGiOh is best of 3 and the wins section of the calculator keeps track of each win and once a player reaches 2 wins the score resets for both players.
 
 The website also has other features for the users such as a timer to keep track of round times (40 minutes) and a dice and coin tool so users dont need any of these items pysically as they can use them within the app as needed.
+![picture of Website on differnet devices](documentation/responsive.jpg)

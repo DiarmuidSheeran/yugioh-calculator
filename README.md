@@ -139,6 +139,14 @@ The website also has other features for the users such as a timer to keep track 
 * When a player enters both a plus and minus together and hits the = button an error for Not a Number (NAN) comes onto there screen. 
 * When a player tries to make 2 calculations in one go using a plus and a minus it will always do the minus calculation. It should give an error message and do the call the undo function.
 
+## Validator Testing
+
+* HTML
+  * No Issues found on W3C HTML Validator
+* CSS
+  * No Issues found on jigsaw.w3.org Validator
+* Javascript
+  * No Issues found on jshint.com Validator
 
 
 

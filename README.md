@@ -69,3 +69,13 @@ The YuGiOh logo is positioned at the top center of the page and gives clarity to
 * When hovered over these buttons change there properties for a more user friendly UI design
 ![picture of calculators](documentation/calculator.jpg)
 ![picture of calculator with calculation](documentation/calculation.jpg)
+
+### Score Counter
+
+* Below each player's calculator buttons, there is a section that displays the number of wins for that player.
+* This section is labeled with "Wins: 0.
+* Each time a users life points reach 0 the winners score counter goes up by 1 point
+* When a player has two wins the score counter for both players gets reset.
+![picture of score counter and player after winning a round](documentation/round-win.jpg)
+![picture of score counter and player after winning a game](documentation/win-score.jpg)
+

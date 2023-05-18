@@ -9,3 +9,33 @@ Each game in YuGiOh is best of 3 and the wins section of the calculator keeps tr
 
 The website also has other features for the users such as a timer to keep track of round times (40 minutes) and a dice and coin tool so users dont need any of these items pysically as they can use them within the app as needed.
 ![picture of Website on differnet devices](documentation/responsive.jpg)
+
+## Contents
+* [Features](#Features)
+  * [Logo](#Logo)
+  * [Username](#Username)
+  * [Calculator](#Calculator)
+  * [Score Counter](#Score-Counter)
+  * [Results Screen](#Results-Screen)
+  * [Reset Match Score](#Reset-Match-Score)
+  * [Timer](#Timer)
+  * [Dice and Coin](#Dice-and-Coin)
+  * [Navigation](#Navigation)
+
+* [Wireframes](#Wireframes)
+
+* [Testing](#Testing)
+
+* [Bugs](#Bugs)
+  * [Solved Bugs](#Solved-Bugs)
+  * [Unsolved Bugs](#Unsolved-Bugs)
+
+* [Validator Testing](#Validator-Testing)
+
+* [Accessibility](#Accessibility)
+
+* [Deployment](#Deployment)
+
+* [Credits](#Credits)
+  * [Content](#Content)
+  * [Media](#Media)

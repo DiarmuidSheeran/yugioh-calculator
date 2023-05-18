@@ -148,5 +148,17 @@ The website also has other features for the users such as a timer to keep track 
 * Javascript
   * No Issues found on jshint.com Validator
 
+## Accessibility
+* I confirmed that my colors and fonts are readable by using the lighthouse tool scoring 100 in accessibility.
+![picture of lighthouse results](documentation/lighthouse.jpg)
 
+## Deployment
+
+* This site  was deployed to GitHub pages
+* In the github repository of Personel Profile navigate to the settings tab.
+* On the left-hand side navigation bar click on the Pages tab.
+* Click on the dropdown menu for branches and select main.
+* Reresh the page.
+* The page provided a link to the completed website.
+* The link to the finished website can be found by clicking the link to the [YuGiOh Duel Calculator](https://diarmuidsheeran.github.io/yugioh-calculator/)
 

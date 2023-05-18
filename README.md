@@ -79,3 +79,12 @@ The YuGiOh logo is positioned at the top center of the page and gives clarity to
 ![picture of score counter and player after winning a round](documentation/round-win.jpg)
 ![picture of score counter and player after winning a game](documentation/win-score.jpg)
 
+### Results Screen
+* A disabled text input field with an initial value of empty is used to display the results of the game.
+* The screen will dispaly results to user if they lose a certain amount of life points, if the loose the round or if they lose the game.
+* Additionaly the screen is used to display the outcomes of the dice roll and the coin flip.
+![picture of result for loss of life points](documentation/result-life-points.jpg)
+![picture of result for coin flip](documentation/result-coin.jpg)
+![picture of result for dice roll](documentation/result-dice.jpg)
+
+

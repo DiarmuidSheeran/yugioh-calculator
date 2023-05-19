@@ -11,37 +11,37 @@ The website also has other features for the users such as a timer to keep track 
 ![picture of Website on differnet devices](documentation/responsive.jpg)
 
 ## Contents
-* [Design](#Design)
+* [Design](#design)
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
-  * [Wireframes](#Wireframes)
+  * [Wireframes](#wireframes)
 
-* [Features](#Features)
-  * [Logo](#Logo)
-  * [Username](#Username)
-  * [Calculator](#Calculator)
-  * [Score Counter](#Score-Counter)
-  * [Results Screen](#Results-Screen)
-  * [Reset Match Score](#Reset-Match-Score)
-  * [Timer](#Timer)
-  * [Dice and Coin](#Dice-and-Coin)
-  * [Navigation](#Navigation)
+* [Features](#features)
+  * [Logo](#logo)
+  * [Username](#username)
+  * [Calculator](#calculator)
+  * [Score Counter](#score-counter)
+  * [Results Screen](#results-screen)
+  * [Reset Match Score](#reset-match-score)
+  * [Timer](#timer)
+  * [Dice and Coin](#dice-and-coin)
+  * [Navigation](#navigation)
 
-* [Testing](#Testing)
+* [Testing](#testing)
 
-* [Bugs](#Bugs)
-  * [Solved Bugs](#Solved-Bugs)
-  * [Unsolved Bugs](#Unsolved-Bugs)
+* [Bugs](#bugs)
+  * [Solved Bugs](#solved-bugs)
+  * [Unsolved Bugs](#unsolved-bugs)
 
-* [Validator Testing](#Validator-Testing)
+* [Validator Testing](#validator-testing)
 
-* [Accessibility](#Accessibility)
+* [Accessibility](#accessibility)
 
-* [Deployment](#Deployment)
+* [Deployment](#deployment)
 
-* [Credits](#Credits)
-  * [Content](#Content)
-  * [Media](#Media)
+* [Credits](#credits)
+  * [Content](#content)
+  * [Media](#media)
 
 ## Design
 

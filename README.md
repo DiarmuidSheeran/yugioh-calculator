@@ -182,3 +182,18 @@ The website also has other features for the users such as a timer to keep track 
 * The page provided a link to the completed website.
 * The link to the finished website can be found by clicking the link to the [YuGiOh Duel Calculator](https://diarmuidsheeran.github.io/yugioh-calculator/)
 
+## Credits
+### Content
+* Most of the content for the Javascript for example if statements, functions, loops, string concatinations and using the dom were taken from the student respository within the [Code Institute](https://codeinstitute.net/ie/)
+* The calculator design and implenation were influenced by [Code with Ania KubówCode's](https://www.youtube.com/watch?v=8IxIyI3JomE) youtube video.
+* The code for the dice and coin was influenced by the [Lets do Coding](https://www.youtube.com/watch?v=Z22B9ZjcIC4) youtube channel.
+* The code for the timer was influenced by few sources including: [dcode's](https://www.youtube.com/watch?v=PIiMSMz7KzM) youtube video and [Reach Star's](https://www.youtube.com/watch?v=4piMZDO5IOI) youtube video.
+* Padstart code was taken from [W3Schools.](https://www.w3schools.com/jsref/jsref_string_padstart.asp)
+* The clearIterval function was influenced by [W3Schools.](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
+* The setIterval function was influenced by [W3Schools.](https://www.w3schools.com/jsref/met_win_setinterval.asp)
+* The split string method was influenced by [W3Schools](https://www.w3schools.com/jsref/jsref_split.asp)
+* The includes code was influenced taken from [W3schools](https://www.w3schools.com/jsref/jsref_includes.asp)
+
+### Media
+* 
+

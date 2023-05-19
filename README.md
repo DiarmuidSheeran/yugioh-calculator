@@ -184,16 +184,23 @@ The website also has other features for the users such as a timer to keep track 
 
 ## Credits
 ### Content
-* Most of the content for the Javascript for example if statements, functions, loops, string concatinations and using the dom were taken from the student respository within the [Code Institute](https://codeinstitute.net/ie/)
+* Most of the content for the Javascript for example if statements, functions, loops, string concatinations and using the dom were taken from the student respository within the [Code Institute.](https://codeinstitute.net/ie/)
 * The calculator design and implenation were influenced by [Code with Ania KubówCode's](https://www.youtube.com/watch?v=8IxIyI3JomE) youtube video.
 * The code for the dice and coin was influenced by the [Lets do Coding](https://www.youtube.com/watch?v=Z22B9ZjcIC4) youtube channel.
 * The code for the timer was influenced by few sources including: [dcode's](https://www.youtube.com/watch?v=PIiMSMz7KzM) youtube video and [Reach Star's](https://www.youtube.com/watch?v=4piMZDO5IOI) youtube video.
 * Padstart code was taken from [W3Schools.](https://www.w3schools.com/jsref/jsref_string_padstart.asp)
 * The clearIterval function was influenced by [W3Schools.](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
 * The setIterval function was influenced by [W3Schools.](https://www.w3schools.com/jsref/met_win_setinterval.asp)
-* The split string method was influenced by [W3Schools](https://www.w3schools.com/jsref/jsref_split.asp)
-* The includes code was influenced taken from [W3schools](https://www.w3schools.com/jsref/jsref_includes.asp)
+* The split string method was influenced by [W3Schools.](https://www.w3schools.com/jsref/jsref_split.asp)
+* The includes code was influenced taken from [W3schools.](https://www.w3schools.com/jsref/jsref_includes.asp)
 
 ### Media
-* 
+* The logo image was taken from [pngaa's](https://www.pngaaa.com/search/yugioh/9/) website.
+* Many of the symbols on the page such as the play, pause, reset, github and rulebook were got from the [Font-Awesome](https://fontawesome.com/search?q=rewin&o=r) website.
+* The images for the dice were got from the [ysandeepjosh](https://github.com/ysandeepjoshi/DiceRoll) Github repository.
+* The Images for the coins were taken from the [Tenor](
+https://tenor.com/view/taste-coin-coin-flip-local-taste-remko-raaimakers-gif-21094455) Website.
+* The wireframe was created using [Balsamiq](https://balsamiq.com/).
+* The Responsive image was got from the [Am-I-Responsive](https://ui.dev/amiresponsive) website.
+* The remaining images were screenshots taken by myself and edited to size for the readme file.
 

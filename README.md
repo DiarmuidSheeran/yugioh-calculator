@@ -11,6 +11,11 @@ The website also has other features for the users such as a timer to keep track 
 ![picture of Website on differnet devices](documentation/responsive.jpg)
 
 ## Contents
+* [Design](#Design)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)
+  * [Wireframes](#Wireframes)
+
 * [Features](#Features)
   * [Logo](#Logo)
   * [Username](#Username)
@@ -21,8 +26,6 @@ The website also has other features for the users such as a timer to keep track 
   * [Timer](#Timer)
   * [Dice and Coin](#Dice-and-Coin)
   * [Navigation](#Navigation)
-
-* [Wireframes](#Wireframes)
 
 * [Testing](#Testing)
 
@@ -40,7 +43,24 @@ The website also has other features for the users such as a timer to keep track 
   * [Content](#Content)
   * [Media](#Media)
 
-  ## Features
+## Design
+
+### Colour Scheme
+* I have used `#000000` & `#ef492f` as the primary and secondary colours for the page.
+* I have used `#717E8E` as a border for the buttons and calculator.
+* I have used `#ffffff` for the numbers and labels.
+* The `#ef492f` and `#717E8E` were taken from the logo with a color picker in the inspection tool of chrome. This allows for a more streamlined design throught the page.
+![picture of color scheme](documentation/color-scheme.jpg)
+
+### Typography
+
+* Google Fonts was used to import the chosen font Anton for use in the site.
+![picture of font used on  the site](documentation/font.jpg)
+
+### Wireframes
+![picture of wireframes for website](documentation/wireframe.jpg)
+
+## Features
 
 ### Logo
 * The YuGiOh logo is positioned at the top center of the page and gives clarity to the user on what game this tool is used for.
@@ -106,7 +126,7 @@ The website also has other features for the users such as a timer to keep track 
 * The website uses a navigation in the footer to link the user to my github and the yugioh wiki rulebook for additional reasources. 
 ![picture of navigation menu in footer](documentation/navigation.jpg)
 
-## Wireframes
+
 
 ## Testing
 

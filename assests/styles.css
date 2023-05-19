@@ -287,7 +287,7 @@ button:active {
 	border-color: #717E8E;
 	color: #000000;
 	background-color: #ef492f;
-	font-weight: bold;
+	font-weight: bolder;
 }
 #game-reset-button:hover{
 	background-color: #717E8E;
@@ -327,6 +327,7 @@ button:active {
 	font-size: 15px;
 	text-align: center;
 	color: #000000;
+	font-weight: bolder;
 }
 #play:hover {
 	background-color: rgb(111, 110, 110);
@@ -337,6 +338,7 @@ button:active {
 	font-size: 15px;
 	text-align: center;
 	color: #000000;
+	font-weight: bolder;
 }
 #pause:hover {
 	background-color: rgb(111, 110, 110);
@@ -347,6 +349,7 @@ button:active {
 	font-size: 15px;
 	text-align: center;
 	color: #000000;
+	font-weight: bolder;
 }
 #restart:hover {
 	background-color: rgb(111, 110, 110);

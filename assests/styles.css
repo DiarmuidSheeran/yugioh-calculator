@@ -416,6 +416,9 @@ a {
 		width: 500px;
 		height: 150px;
 	}
+	label {
+		font-size: 19px;
+	}
 	button {
 		font-size: 20px;
 	}
@@ -441,6 +444,9 @@ a {
 		height: 100px;
 		margin-left: 10px;
 		margin-bottom: 5px;
+	}
+	label {
+		font-size: 18px;
 	}
 	input[type="text"] {
 		width: 140px;
@@ -551,6 +557,9 @@ a {
 		margin-left: 10px;
 		margin-bottom: 5px;
 	}
+	label {
+		font-size: 17px;
+	}
 	input[type="text"] {
 		width: 140px;
 		margin: 5px;
@@ -613,7 +622,6 @@ a {
 	}
 	#results input[type="text"] {
 		margin-top: 5px;
-		/* Adjust the margin value as per your preference */
 		font-size: 12px;
 		width: 340px;
 		height: auto;
@@ -666,6 +674,9 @@ a {
 		height: 100px;
 		margin-left: 10px;
 		margin-bottom: 5px;
+	}
+	label {
+		font-size: 17px;
 	}
 	input[type="text"] {
 		width: 140px;
@@ -729,7 +740,6 @@ a {
 	}
 	#results input[type="text"] {
 		margin-top: 5px;
-		/* Adjust the margin value as per your preference */
 		font-size: 12px;
 		width: 330px;
 		height: auto;
@@ -782,6 +792,9 @@ a {
 		height: 100px;
 		margin-left: 10px;
 		margin-bottom: 5px;
+	}
+	label {
+		font-size: 15px;
 	}
 	input[type="text"] {
 		width: 10px;

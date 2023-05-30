@@ -417,7 +417,7 @@ a {
 	color: #ef492f;
 }
 .error-link:hover {
-	color: #717E8E
+	color: #717E8E;
 }
 /*-------media query for tablet---------*/
 @media (max-width: 900px) {

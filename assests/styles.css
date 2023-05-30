@@ -401,7 +401,7 @@ a {
 	color: #000000;
 	padding-left: 20px;
 }
-.error-page {
+.error-page section{
 	text-align: center;
 }
 /*-------media query for tablet---------*/

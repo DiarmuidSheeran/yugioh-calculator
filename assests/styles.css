@@ -404,6 +404,7 @@ a {
 .error-page {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .error-link {
 	color: #ffffff;

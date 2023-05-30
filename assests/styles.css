@@ -401,6 +401,9 @@ a {
 	color: #000000;
 	padding-left: 20px;
 }
+.error-page {
+	text-align: center;
+}
 /*-------media query for tablet---------*/
 @media (max-width: 900px) {
 	button {

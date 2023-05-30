@@ -401,8 +401,12 @@ a {
 	color: #000000;
 	padding-left: 20px;
 }
-.error-page section{
-	text-align: center;
+.error-page {
+	display: flex;
+	justify-content: center;
+}
+.error-link {
+	color: #ffffff;
 }
 /*-------media query for tablet---------*/
 @media (max-width: 900px) {

@@ -409,6 +409,7 @@ a {
 }
 .error-link {
 	color: #ef492f;
+	text-align: center;
 }
 .error-link:hover {
 	color: #717E8E

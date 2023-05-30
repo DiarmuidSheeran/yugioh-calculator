@@ -2,7 +2,7 @@
 let playerName1 = document.getElementById("player-1");
 let playerName2 = document.getElementById("player-2");
 //Takes value of result and initializes it to screen
-let screen = document.getElementById("result");
+let screen1 = document.getElementById("result");
 let screen2 = document.getElementById("result-2");
 //variables assigned 0 for a starting count 
 let winPlayer1 = 0;
@@ -31,26 +31,26 @@ function submitName2() {
  */
 //takes the value that is assigned to the input field to give the calculator its initiaL value
 function addToScreen(value) {
-   screen.value += value;
+   screen1.value += value;
 }
 //sets the initial value of 8000 back to the input fields
 function clearScreen() {
-   screen.value = "8000";
+   screen1.value = "8000";
 }
 //calculates the lifepoints lost or gained and checks if life point go to 0
 function calculate() {
    let result = document.getElementById('result-screen');
    let winner = document.getElementById('p-2-count');
    //checks if the screen has a '-' on it and if true splits the strings on either side of it.
-   if (screen.value.includes('-')) {
-      let lifePoints = screen.value.split('-');
+   if (screen1.value.includes('-')) {
+      let lifePoints = screen1.value.split('-');
       //checks the variable lifepoints for 2 strings and pasess the two strings into two differnet variables converting them to ints
       if (lifePoints.length === 2) {
          let playerLifePoints = parseInt(lifePoints[0]);
          let battleDamage = parseInt(lifePoints[1]);
          let damageTaken = playerLifePoints - battleDamage;
          //converts the damageTaken calculation back to a string
-         screen.value = damageTaken.toString();
+         screen1.value = damageTaken.toString();
          //check if playerName1 has a value for results screen if not generic name used
          if (playerName1.value != "") {
             result.value = playerName1.value + " just lost: " + battleDamage + " life points";
@@ -64,13 +64,13 @@ function calculate() {
       }
    }
    //same as above if statements but for addition
-   if (screen.value.includes('+')) {
-      let lifePoints = screen.value.split('+');
+   if (screen1.value.includes('+')) {
+      let lifePoints = screen1.value.split('+');
       if (lifePoints.length === 2) {
          let playerLifePoints = parseInt(lifePoints[0]);
          let battleDamage = parseInt(lifePoints[1]);
          let damageTaken = playerLifePoints + battleDamage;
-         screen.value = damageTaken.toString();
+         screen1.value = damageTaken.toString();
          if (playerName1.value != "") {
             result.value = playerName1.value + " just gained: " + battleDamage + " life points";
          } else {
@@ -82,7 +82,7 @@ function calculate() {
       }
    }
    //while loop keeps playing until score reaches 0 
-   while (screen.value <= 0) {
+   while (screen1.value <= 0) {
       //check if screen value is = 0
       //check if playerName2 has content, if true print message with player 2's name and add a count to player 2's score
       if (playerName2.value != "") {
@@ -124,7 +124,7 @@ function calculate() {
 }
 //allows user to edit a mistake by using the slice method to remove last value string off the screen 
 function undo() {
-   screen.value = screen.value.slice(0, -1);
+   screen1.value = screen1.value.slice(0, -1);
 }
 
 /**

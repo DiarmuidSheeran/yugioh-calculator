@@ -407,9 +407,11 @@ a {
 .error-page p{
 	text-align: center;
 }
+.error-page a{
+	text-align: center;
+}
 .error-link {
 	color: #ef492f;
-	text-align: center;
 }
 .error-link:hover {
 	color: #717E8E
